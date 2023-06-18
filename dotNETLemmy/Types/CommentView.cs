@@ -1,0 +1,17 @@
+using Newtonsoft.Json;
+
+namespace dotNetLemmy.Types;
+
+public class CommentView
+{
+    [JsonProperty] public Comment Comment { get; private set; } = null!;
+    [JsonProperty] public CommunitySafe Community { get; private set; } = null!;
+    [JsonProperty] public CommentAggregates Counts { get; private set; } = null!;
+    [JsonProperty] public PersonSafe Creator { get; private set; } = null!;
+    [JsonProperty] public bool CreatorBannedFromCommunity { get; private set; }
+    [JsonProperty] public bool CreatorBlocked { get; private set; }
+    [JsonProperty] public int MyVote { get; private set; }
+    [JsonProperty] public Post Post { get; private set; } = null!;
+    [JsonProperty] public bool Saved { get; private set; }
+    [JsonProperty] public SubscribedType Subscribed { get; private set; }
+}

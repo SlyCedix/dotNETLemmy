@@ -1,0 +1,19 @@
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+
+namespace dotNetLemmy.Types;
+
+public class GetRepliesForm : IForm
+{
+    public string Auth { get; set; } = string.Empty;
+    public int? Limit { get; set; }
+    public int? Page { get; set; }
+
+    [JsonConverter(typeof(StringEnumConverter))]
+    public SortType? Sort { get; set; }
+
+    public bool? UnreadOnly { get; set; }
+
+    public string EndPoint => "/user/replies";
+    public HttpMethod Method => HttpMethod.Get;
+}

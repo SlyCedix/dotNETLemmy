@@ -1,0 +1,11 @@
+﻿namespace dotNetLemmy.Types;
+
+public class ApproveRegistrationApplicationForm : IForm
+{
+    public bool Approve { get; set; }
+    public string Auth { get; set; } = string.Empty;
+    public string? DenyReason { get; set; }
+    public int Id { get; set; }
+    public string EndPoint => "/admin/registration_application/approve";
+    public HttpMethod Method => HttpMethod.Put;
+}
