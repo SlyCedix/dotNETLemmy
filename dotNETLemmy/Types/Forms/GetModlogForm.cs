@@ -13,8 +13,8 @@ public class GetModlogForm : IForm
     public int? Page { get; set; }
 
     [JsonConverter(typeof(StringEnumConverter))]
-    // ReSharper disable once InconsistentNaming
-    public ModlogActionType Type_ { get; set; }
+    [JsonProperty(PropertyName = "type_")]
+    public ModlogActionType Type { get; set; }
 
     public string EndPoint => "/modlog";
     public HttpMethod Method => HttpMethod.Get;

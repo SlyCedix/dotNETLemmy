@@ -20,8 +20,8 @@ public class SearchForm : IForm
     public SortType? SortType { get; set; }
 
     [JsonConverter(typeof(StringEnumConverter))]
-    // ReSharper disable once InconsistentNaming
-    public SearchType? Type_ { get; set; }
+    [JsonProperty(PropertyName = "type_")]
+    public SearchType? Type { get; set; }
 
     public string EndPoint => "/search";
     public HttpMethod Method => HttpMethod.Get;

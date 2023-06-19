@@ -10,12 +10,12 @@ public abstract class Response : IResponse
     public string? ReasonPhrase { get; private set; }
 
     public static async Task<TResponse?> FromHttpResponseMessage<TResponse>(HttpResponseMessage message)
-        where TResponse : Response
+        where TResponse : Response, new()
     {
         var json = await message.Content.ReadAsStringAsync();
         var resObject = JsonConvert.DeserializeObject<TResponse>(json);
 
-        if (resObject is null) return resObject;
+        if (resObject is null) resObject = new TResponse();
 
         resObject.StatusCode = message.StatusCode;
         resObject.IsSuccessStatusCode = message.IsSuccessStatusCode;

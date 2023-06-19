@@ -19,8 +19,8 @@ public class GetCommentsForm : IForm
     public CommentSortType? Sort { get; set; }
 
     [JsonConverter(typeof(StringEnumConverter))]
-    // ReSharper disable once InconsistentNaming
-    public ListingType Type_ { get; set; }
+    [JsonProperty(PropertyName = "type_")]
+    public ListingType Type { get; set; }
 
     public string EndPoint => "/comment/list";
     public HttpMethod Method => HttpMethod.Get;

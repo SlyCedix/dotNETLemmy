@@ -16,8 +16,8 @@ public class GetPostsForm : IForm
     public SortType? Sort { get; set; }
 
     [JsonConverter(typeof(StringEnumConverter))]
-    // ReSharper disable once InconsistentNaming
-    public ListingType? Type_ { get; set; }
+    [JsonProperty(PropertyName = "type_")]
+    public ListingType? Type { get; set; }
 
     public string EndPoint => "/post/list";
     public HttpMethod Method => HttpMethod.Get;
