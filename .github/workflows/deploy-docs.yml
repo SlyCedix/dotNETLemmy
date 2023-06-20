@@ -39,8 +39,9 @@ jobs:
           
       - run: dotnet tool update -g docfx
       - run: dotnet build
-      - run: cd dotNETLemmy.Docs
-      - run: dotnet run
+      
+      - working-directory: ./dotNETLemmy.Docs
+        run: dotnet run
       
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
