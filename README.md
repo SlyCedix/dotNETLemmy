@@ -1,7 +1,20 @@
-# dotNETLemmy
+# Lemmy .NET API
 
-## Summary
+An implementation of the Lemmy HTTP API modeled after [lemmy-js-client](https://github.com/LemmyNet/lemmy-js-client).
 
-**dotNETLemmy** is an HTTP API helper for [Lemmy](https://github.com/LemmyNet/lemmy) implemented in .NET 7  which provides helper functions and types for generating requests and deserializing responses to the Lemmy API. The implementation was modeled after [lemmy-js-client](https://github.com/LemmyNet/lemmy-js-client).
+## Usage
+[LemmyHttpClient Docs](xref:dotNETLemmy.API.LemmyHttpClient)
 
-Support is only included for the HTTP API, since Lemmy has opted to remove the websocket API that was once available.
+```csharp
+// Logs into lemmy.ml and stores the authentication token to be used for further requests
+var lemmyClient = new LemmyHttpClient("https://lemmy.ml");
+
+var loginForm = new LoginForm {
+    UsernameOrEmail = "username",
+    Password = "password"
+}
+
+LoginResponse loginResponse = await lemmyClient.Login(loginForm);
+
+if(loginResponse.Jwt is not string auth) throw new Exception("Login Failed");
+```
