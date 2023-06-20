@@ -1,0 +1,76 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "dotNETLemmy.API/dotNETLemmy.API.csproj"
+          ],
+          "src" : "../"
+        }
+      ],
+      "dest": "api",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false,
+      "namespaceLayout": "nested",
+      "memberLayout": "separatePages"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "api/**.yml",
+          "api/index.md"
+        ]
+      },
+      {
+        "files": [
+          "articles/**.md",
+          "articles/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "_site",
+    "globalMetadata" : {
+      "_appTitle": "dotNETLemmy.API",
+      "_appName": "Lemmy .NET API",
+      "_appFaviconPath": "images/favicon.png",
+      "_appLogoPath": "images/icon-512x512.png",
+      "_appFooter": "<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'Y8Y5MFPO6');kofiwidget2.draw();</script>",
+      "_copyrightFooter": "© SlyCedix. All rights reserved.",
+      "_enableSearch": true,
+      "_disableSideFilter": false,
+      "_enableNewTab": true,
+      "_disableContribution": false,
+      "_disableBreadcrumb": false,
+      "_gitContribute": {
+        "repo": "https://github.com/SlyCedix/dotNETLemmy",
+        "branch": "main"
+      }
+    },
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "template": [
+      "default",
+      "templates/singulinkfx"
+    ],
+    "postProcessors": [],
+    "keepFileLink": false,
+    "xrefService" : [
+      "https://xref.docs.microsoft.com/query?uid={uid}"
+    ],
+    "cleanupCacheHistory" : false,
+    "disableGitFeatures": false,
+    "force" : true
+  }
+}

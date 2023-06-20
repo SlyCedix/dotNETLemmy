@@ -1,0 +1,3809 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LemmyHttpClient
+ | dotNETLemmy </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LemmyHttpClient
+ | dotNETLemmy ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/SlyCedix/dotNETLemmy/new/main/apiSpec/new?filename=dotNETLemmy_LemmyHttpClient.md&amp;value=---%0Auid%3A%20dotNETLemmy.LemmyHttpClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt=".NET Lemmy API">
+            .NET Lemmy API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="dotNETLemmy.LemmyHttpClient">
+
+
+
+  <h1 id="dotNETLemmy_LemmyHttpClient" data-uid="dotNETLemmy.LemmyHttpClient" class="text-break">
+    Class LemmyHttpClient
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="dotNETLemmy.html">dotNETLemmy</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>dotNETLemmy.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Helps build Lemmy HTTP Requests.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LemmyHttpClient : IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">LemmyHttpClient</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient__ctor_" data-uid="dotNETLemmy.LemmyHttpClient.#ctor*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient__ctor_System_Uri_" data-uid="dotNETLemmy.LemmyHttpClient.#ctor(System.Uri)">
+  LemmyHttpClient(Uri)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="dotNETLemmy.LemmyHttpClient.html">LemmyHttpClient</a> class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LemmyHttpClient(Uri baseUri)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>baseUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
+    <dd><p>Base uri to the lemmy instance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_AddAdmin_" data-uid="dotNETLemmy.LemmyHttpClient.AddAdmin*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_AddAdmin_dotNETLemmy_Types_AddAdminForm_" data-uid="dotNETLemmy.LemmyHttpClient.AddAdmin(dotNETLemmy.Types.AddAdminForm)">
+  AddAdmin(AddAdminForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an administrator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AddAdminResponse&gt; AddAdmin(AddAdminForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.AddAdminForm.html">AddAdminForm</a></dt>
+    <dd><p>The form to send for adding an administrator. <a class="xref" href="dotNETLemmy.Types.AddAdminForm.html">AddAdminForm</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.AddAdminResponse.html">AddAdminResponse</a>&gt;</dt>
+    <dd><p>The task object representing the asynchronous operation. The task result contains the response after adding an administrator. <a class="xref" href="dotNETLemmy.Types.AddAdminResponse.html">AddAdminResponse</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_AddModToCommunity_" data-uid="dotNETLemmy.LemmyHttpClient.AddModToCommunity*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_AddModToCommunity_dotNETLemmy_Types_AddModToCommunityForm_" data-uid="dotNETLemmy.LemmyHttpClient.AddModToCommunity(dotNETLemmy.Types.AddModToCommunityForm)">
+  AddModToCommunity(AddModToCommunityForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a moderator to a community.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AddModToCommunityResponse&gt; AddModToCommunity(AddModToCommunityForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.AddModToCommunityForm.html">AddModToCommunityForm</a></dt>
+    <dd><p>The form to send for adding a moderator to a community. <a class="xref" href="dotNETLemmy.Types.AddModToCommunityForm.html">AddModToCommunityForm</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.AddModToCommunityResponse.html">AddModToCommunityResponse</a>&gt;</dt>
+    <dd><p>The task object representing the asynchronous operation. The task result contains the response after adding a moderator to a community. <a class="xref" href="dotNETLemmy.Types.AddModToCommunityResponse.html">AddModToCommunityResponse</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_ApproveRegistrationApplication_" data-uid="dotNETLemmy.LemmyHttpClient.ApproveRegistrationApplication*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_ApproveRegistrationApplication_dotNETLemmy_Types_ApproveRegistrationApplicationForm_" data-uid="dotNETLemmy.LemmyHttpClient.ApproveRegistrationApplication(dotNETLemmy.Types.ApproveRegistrationApplicationForm)">
+  ApproveRegistrationApplication(ApproveRegistrationApplicationForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Approves a registration application.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApproveRegistrationApplicationResponse&gt; ApproveRegistrationApplication(ApproveRegistrationApplicationForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.ApproveRegistrationApplicationForm.html">ApproveRegistrationApplicationForm</a></dt>
+    <dd><p>The form to send for approving a registration application. <a class="xref" href="dotNETLemmy.Types.ApproveRegistrationApplicationForm.html">ApproveRegistrationApplicationForm</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.ApproveRegistrationApplicationResponse.html">ApproveRegistrationApplicationResponse</a>&gt;</dt>
+    <dd><p>The task object representing the asynchronous operation. The task result contains the response after approving a registration application. <a class="xref" href="dotNETLemmy.Types.ApproveRegistrationApplicationResponse.html">ApproveRegistrationApplicationResponse</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_BanFromCommunity_" data-uid="dotNETLemmy.LemmyHttpClient.BanFromCommunity*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_BanFromCommunity_dotNETLemmy_Types_BanFromCommunityForm_" data-uid="dotNETLemmy.LemmyHttpClient.BanFromCommunity(dotNETLemmy.Types.BanFromCommunityForm)">
+  BanFromCommunity(BanFromCommunityForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Bans a person from a community.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;BanFromCommunityResponse&gt; BanFromCommunity(BanFromCommunityForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.BanFromCommunityForm.html">BanFromCommunityForm</a></dt>
+    <dd><p>The form to send for banning a person from a community. <a class="xref" href="dotNETLemmy.Types.BanFromCommunityForm.html">BanFromCommunityForm</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.BanFromCommunityResponse.html">BanFromCommunityResponse</a>&gt;</dt>
+    <dd><p>The task object representing the asynchronous operation. The task result contains the response after banning a person from a community. <a class="xref" href="dotNETLemmy.Types.BanFromCommunityResponse.html">BanFromCommunityResponse</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_BanPerson_" data-uid="dotNETLemmy.LemmyHttpClient.BanPerson*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_BanPerson_dotNETLemmy_Types_BanPersonForm_" data-uid="dotNETLemmy.LemmyHttpClient.BanPerson(dotNETLemmy.Types.BanPersonForm)">
+  BanPerson(BanPersonForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Bans a person.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;BanPersonResponse&gt; BanPerson(BanPersonForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.BanPersonForm.html">BanPersonForm</a></dt>
+    <dd><p>The form to send for banning a person. <a class="xref" href="dotNETLemmy.Types.BanPersonForm.html">BanPersonForm</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.BanPersonResponse.html">BanPersonResponse</a>&gt;</dt>
+    <dd><p>The task object representing the asynchronous operation. The task result contains the response after banning a person. <a class="xref" href="dotNETLemmy.Types.BanPersonResponse.html">BanPersonResponse</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_BlockCommunity_" data-uid="dotNETLemmy.LemmyHttpClient.BlockCommunity*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_BlockCommunity_dotNETLemmy_Types_BlockCommunityForm_" data-uid="dotNETLemmy.LemmyHttpClient.BlockCommunity(dotNETLemmy.Types.BlockCommunityForm)">
+  BlockCommunity(BlockCommunityForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Blocks a community.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;BlockCommunityResponse&gt; BlockCommunity(BlockCommunityForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.BlockCommunityForm.html">BlockCommunityForm</a></dt>
+    <dd><p>The form to send for blocking a community. <a class="xref" href="dotNETLemmy.Types.BlockCommunityForm.html">BlockCommunityForm</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.BlockCommunityResponse.html">BlockCommunityResponse</a>&gt;</dt>
+    <dd><p>The task object representing the asynchronous operation. The task result contains the response after blocking a community. <a class="xref" href="dotNETLemmy.Types.BlockCommunityResponse.html">BlockCommunityResponse</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_BlockPerson_" data-uid="dotNETLemmy.LemmyHttpClient.BlockPerson*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_BlockPerson_dotNETLemmy_Types_BlockPersonForm_" data-uid="dotNETLemmy.LemmyHttpClient.BlockPerson(dotNETLemmy.Types.BlockPersonForm)">
+  BlockPerson(BlockPersonForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Blocks a person.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;BlockPersonResponse&gt; BlockPerson(BlockPersonForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.BlockPersonForm.html">BlockPersonForm</a></dt>
+    <dd><p>The form to send for blocking a person. <a class="xref" href="dotNETLemmy.Types.BlockPersonForm.html">BlockPersonForm</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.BlockPersonResponse.html">BlockPersonResponse</a>&gt;</dt>
+    <dd><p>The task object representing the asynchronous operation. The task result contains the response after blocking a person. <a class="xref" href="dotNETLemmy.Types.BlockPersonResponse.html">BlockPersonResponse</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_ChangePassword_" data-uid="dotNETLemmy.LemmyHttpClient.ChangePassword*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_ChangePassword_dotNETLemmy_Types_ChangePasswordForm_" data-uid="dotNETLemmy.LemmyHttpClient.ChangePassword(dotNETLemmy.Types.ChangePasswordForm)">
+  ChangePassword(ChangePasswordForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Changes the password for the current user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;LoginResponse&gt; ChangePassword(ChangePasswordForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.ChangePasswordForm.html">ChangePasswordForm</a></dt>
+    <dd><p>The form to send for changing the password. <a class="xref" href="dotNETLemmy.Types.ChangePasswordForm.html">ChangePasswordForm</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.LoginResponse.html">LoginResponse</a>&gt;</dt>
+    <dd><p>The task object representing the asynchronous operation. The task result contains the response after changing the password. <a class="xref" href="dotNETLemmy.Types.LoginResponse.html">LoginResponse</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_CreateComment_" data-uid="dotNETLemmy.LemmyHttpClient.CreateComment*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_CreateComment_dotNETLemmy_Types_CreateCommentForm_" data-uid="dotNETLemmy.LemmyHttpClient.CreateComment(dotNETLemmy.Types.CreateCommentForm)">
+  CreateComment(CreateCommentForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new comment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CommentResponse&gt; CreateComment(CreateCommentForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.CreateCommentForm.html">CreateCommentForm</a></dt>
+    <dd><p>The form to send for creating a comment. <a class="xref" href="dotNETLemmy.Types.CreateCommentForm.html">CreateCommentForm</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.CommentResponse.html">CommentResponse</a>&gt;</dt>
+    <dd><p>The task object representing the asynchronous operation. The task result contains the response after creating a comment. <a class="xref" href="dotNETLemmy.Types.CommentResponse.html">CommentResponse</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_CreateCommunity_" data-uid="dotNETLemmy.LemmyHttpClient.CreateCommunity*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_CreateCommunity_dotNETLemmy_Types_CreateCommunityForm_" data-uid="dotNETLemmy.LemmyHttpClient.CreateCommunity(dotNETLemmy.Types.CreateCommunityForm)">
+  CreateCommunity(CreateCommunityForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new community.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CommunityResponse&gt; CreateCommunity(CreateCommunityForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.CreateCommunityForm.html">CreateCommunityForm</a></dt>
+    <dd><p>The form to send for creating a community. <a class="xref" href="dotNETLemmy.Types.CreateCommunityForm.html">CreateCommunityForm</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.CommunityResponse.html">CommunityResponse</a>&gt;</dt>
+    <dd><p>The task object representing the asynchronous operation. The task result contains the response after creating a community. <a class="xref" href="dotNETLemmy.Types.CommunityResponse.html">CommunityResponse</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_CreatePost_" data-uid="dotNETLemmy.LemmyHttpClient.CreatePost*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_CreatePost_dotNETLemmy_Types_CreatePostForm_" data-uid="dotNETLemmy.LemmyHttpClient.CreatePost(dotNETLemmy.Types.CreatePostForm)">
+  CreatePost(CreatePostForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new post.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PostResponse&gt; CreatePost(CreatePostForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.CreatePostForm.html">CreatePostForm</a></dt>
+    <dd><p>The form to send for creating a post. <a class="xref" href="dotNETLemmy.Types.CreatePostForm.html">CreatePostForm</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PostResponse.html">PostResponse</a>&gt;</dt>
+    <dd><p>The task object representing the asynchronous operation. The task result contains the response after creating a post. <a class="xref" href="dotNETLemmy.Types.PostResponse.html">PostResponse</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_CreatePostReport_" data-uid="dotNETLemmy.LemmyHttpClient.CreatePostReport*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_CreatePostReport_dotNETLemmy_Types_CreatePostReportForm_" data-uid="dotNETLemmy.LemmyHttpClient.CreatePostReport(dotNETLemmy.Types.CreatePostReportForm)">
+  CreatePostReport(CreatePostReportForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new report for a post.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PostReportResponse&gt; CreatePostReport(CreatePostReportForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.CreatePostReportForm.html">CreatePostReportForm</a></dt>
+    <dd><p>The form to send for creating a post report. <a class="xref" href="dotNETLemmy.Types.CreatePostReportForm.html">CreatePostReportForm</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PostReportResponse.html">PostReportResponse</a>&gt;</dt>
+    <dd><p>The task object representing the asynchronous operation. The task result contains the response after creating a post report. <a class="xref" href="dotNETLemmy.Types.PostReportResponse.html">PostReportResponse</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_CreatePrivateMessage_" data-uid="dotNETLemmy.LemmyHttpClient.CreatePrivateMessage*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_CreatePrivateMessage_dotNETLemmy_Types_CreatePrivateMessageForm_" data-uid="dotNETLemmy.LemmyHttpClient.CreatePrivateMessage(dotNETLemmy.Types.CreatePrivateMessageForm)">
+  CreatePrivateMessage(CreatePrivateMessageForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new private message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PrivateMessageResponse&gt; CreatePrivateMessage(CreatePrivateMessageForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.CreatePrivateMessageForm.html">CreatePrivateMessageForm</a></dt>
+    <dd><p>The form to send for creating a private message. <a class="xref" href="dotNETLemmy.Types.CreatePrivateMessageForm.html">CreatePrivateMessageForm</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PrivateMessageResponse.html">PrivateMessageResponse</a>&gt;</dt>
+    <dd><p>The task object representing the asynchronous operation. The task result contains the response after creating a private message. <a class="xref" href="dotNETLemmy.Types.PrivateMessageResponse.html">PrivateMessageResponse</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_CreatePrivateMessageReport_" data-uid="dotNETLemmy.LemmyHttpClient.CreatePrivateMessageReport*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_CreatePrivateMessageReport_dotNETLemmy_Types_CreatePrivateMessageReportForm_" data-uid="dotNETLemmy.LemmyHttpClient.CreatePrivateMessageReport(dotNETLemmy.Types.CreatePrivateMessageReportForm)">
+  CreatePrivateMessageReport(CreatePrivateMessageReportForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new report for a private message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PrivateMessageReportResponse&gt; CreatePrivateMessageReport(CreatePrivateMessageReportForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.CreatePrivateMessageReportForm.html">CreatePrivateMessageReportForm</a></dt>
+    <dd><p>The form to send for creating a private message report. <a class="xref" href="dotNETLemmy.Types.CreatePrivateMessageReportForm.html">CreatePrivateMessageReportForm</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PrivateMessageReportResponse.html">PrivateMessageReportResponse</a>&gt;</dt>
+    <dd><p>The task object representing the asynchronous operation. The task result contains the response after creating a private message report. <a class="xref" href="dotNETLemmy.Types.PrivateMessageReportResponse.html">PrivateMessageReportResponse</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_CreateSite_" data-uid="dotNETLemmy.LemmyHttpClient.CreateSite*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_CreateSite_dotNETLemmy_Types_CreateSiteForm_" data-uid="dotNETLemmy.LemmyHttpClient.CreateSite(dotNETLemmy.Types.CreateSiteForm)">
+  CreateSite(CreateSiteForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new report for a private message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;SiteResponse&gt; CreateSite(CreateSiteForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.CreateSiteForm.html">CreateSiteForm</a></dt>
+    <dd><p>The form to send for creating a private message report. <a class="xref" href="dotNETLemmy.Types.CreatePrivateMessageReportForm.html">CreatePrivateMessageReportForm</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.SiteResponse.html">SiteResponse</a>&gt;</dt>
+    <dd><p>The task object representing the asynchronous operation. The task result contains the response after creating a private message report. <a class="xref" href="dotNETLemmy.Types.PrivateMessageReportResponse.html">PrivateMessageReportResponse</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_DeleteAccount_" data-uid="dotNETLemmy.LemmyHttpClient.DeleteAccount*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_DeleteAccount_dotNETLemmy_Types_DeleteAccountForm_" data-uid="dotNETLemmy.LemmyHttpClient.DeleteAccount(dotNETLemmy.Types.DeleteAccountForm)">
+  DeleteAccount(DeleteAccountForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes a user account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DeleteAccountResponse&gt; DeleteAccount(DeleteAccountForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.DeleteAccountForm.html">DeleteAccountForm</a></dt>
+    <dd><p>The form to send for deleting a user account. <a class="xref" href="dotNETLemmy.Types.CreatePrivateMessageReportForm.html">CreatePrivateMessageReportForm</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.DeleteAccountResponse.html">DeleteAccountResponse</a>&gt;</dt>
+    <dd><p>The task object representing the asynchronous operation. The task result contains the response after deleting a user account. <a class="xref" href="dotNETLemmy.Types.PrivateMessageReportResponse.html">PrivateMessageReportResponse</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_DeleteComment_" data-uid="dotNETLemmy.LemmyHttpClient.DeleteComment*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_DeleteComment_dotNETLemmy_Types_DeleteCommentForm_" data-uid="dotNETLemmy.LemmyHttpClient.DeleteComment(dotNETLemmy.Types.DeleteCommentForm)">
+  DeleteComment(DeleteCommentForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes the comment using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CommentResponse&gt; DeleteComment(DeleteCommentForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.DeleteCommentForm.html">DeleteCommentForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.CommentResponse.html">CommentResponse</a>&gt;</dt>
+    <dd><p>A task containing the comment response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_DeleteCommunity_" data-uid="dotNETLemmy.LemmyHttpClient.DeleteCommunity*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_DeleteCommunity_dotNETLemmy_Types_DeleteCommunityForm_" data-uid="dotNETLemmy.LemmyHttpClient.DeleteCommunity(dotNETLemmy.Types.DeleteCommunityForm)">
+  DeleteCommunity(DeleteCommunityForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes the community using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CommunityResponse&gt; DeleteCommunity(DeleteCommunityForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.DeleteCommunityForm.html">DeleteCommunityForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.CommunityResponse.html">CommunityResponse</a>&gt;</dt>
+    <dd><p>A task containing the community response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_DeletePost_" data-uid="dotNETLemmy.LemmyHttpClient.DeletePost*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_DeletePost_dotNETLemmy_Types_DeletePostForm_" data-uid="dotNETLemmy.LemmyHttpClient.DeletePost(dotNETLemmy.Types.DeletePostForm)">
+  DeletePost(DeletePostForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes the post using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PostResponse&gt; DeletePost(DeletePostForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.DeletePostForm.html">DeletePostForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PostResponse.html">PostResponse</a>&gt;</dt>
+    <dd><p>A task containing the post response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_DeletePrivateMessage_" data-uid="dotNETLemmy.LemmyHttpClient.DeletePrivateMessage*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_DeletePrivateMessage_dotNETLemmy_Types_DeletePrivateMessageForm_" data-uid="dotNETLemmy.LemmyHttpClient.DeletePrivateMessage(dotNETLemmy.Types.DeletePrivateMessageForm)">
+  DeletePrivateMessage(DeletePrivateMessageForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes the private message using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PrivateMessageResponse&gt; DeletePrivateMessage(DeletePrivateMessageForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.DeletePrivateMessageForm.html">DeletePrivateMessageForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PrivateMessageResponse.html">PrivateMessageResponse</a>&gt;</dt>
+    <dd><p>A task containing the private message response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_Dispose_" data-uid="dotNETLemmy.LemmyHttpClient.Dispose*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_Dispose" data-uid="dotNETLemmy.LemmyHttpClient.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disposes this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_EditComment_" data-uid="dotNETLemmy.LemmyHttpClient.EditComment*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_EditComment_dotNETLemmy_Types_EditCommentForm_" data-uid="dotNETLemmy.LemmyHttpClient.EditComment(dotNETLemmy.Types.EditCommentForm)">
+  EditComment(EditCommentForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Edits the comment using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CommentResponse&gt; EditComment(EditCommentForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.EditCommentForm.html">EditCommentForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.CommentResponse.html">CommentResponse</a>&gt;</dt>
+    <dd><p>A task containing the comment response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_EditCommunity_" data-uid="dotNETLemmy.LemmyHttpClient.EditCommunity*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_EditCommunity_dotNETLemmy_Types_EditCommunityForm_" data-uid="dotNETLemmy.LemmyHttpClient.EditCommunity(dotNETLemmy.Types.EditCommunityForm)">
+  EditCommunity(EditCommunityForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Edits the community using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CommunityResponse&gt; EditCommunity(EditCommunityForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.EditCommunityForm.html">EditCommunityForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.CommunityResponse.html">CommunityResponse</a>&gt;</dt>
+    <dd><p>A task containing the community response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_EditPost_" data-uid="dotNETLemmy.LemmyHttpClient.EditPost*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_EditPost_dotNETLemmy_Types_EditPostForm_" data-uid="dotNETLemmy.LemmyHttpClient.EditPost(dotNETLemmy.Types.EditPostForm)">
+  EditPost(EditPostForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Edits the post using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PostResponse&gt; EditPost(EditPostForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.EditPostForm.html">EditPostForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PostResponse.html">PostResponse</a>&gt;</dt>
+    <dd><p>A task containing the post response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_EditPrivateMessage_" data-uid="dotNETLemmy.LemmyHttpClient.EditPrivateMessage*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_EditPrivateMessage_dotNETLemmy_Types_EditPrivateMessageForm_" data-uid="dotNETLemmy.LemmyHttpClient.EditPrivateMessage(dotNETLemmy.Types.EditPrivateMessageForm)">
+  EditPrivateMessage(EditPrivateMessageForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Edits the private message using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PrivateMessageResponse&gt; EditPrivateMessage(EditPrivateMessageForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.EditPrivateMessageForm.html">EditPrivateMessageForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PrivateMessageResponse.html">PrivateMessageResponse</a>&gt;</dt>
+    <dd><p>A task containing the private message response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_EditSite_" data-uid="dotNETLemmy.LemmyHttpClient.EditSite*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_EditSite_dotNETLemmy_Types_EditSiteForm_" data-uid="dotNETLemmy.LemmyHttpClient.EditSite(dotNETLemmy.Types.EditSiteForm)">
+  EditSite(EditSiteForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Edits the site using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;SiteResponse&gt; EditSite(EditSiteForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.EditSiteForm.html">EditSiteForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.SiteResponse.html">SiteResponse</a>&gt;</dt>
+    <dd><p>A task containing the site response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_FeaturePost_" data-uid="dotNETLemmy.LemmyHttpClient.FeaturePost*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_FeaturePost_dotNETLemmy_Types_FeaturePostForm_" data-uid="dotNETLemmy.LemmyHttpClient.FeaturePost(dotNETLemmy.Types.FeaturePostForm)">
+  FeaturePost(FeaturePostForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Features the post using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PostResponse&gt; FeaturePost(FeaturePostForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.FeaturePostForm.html">FeaturePostForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PostResponse.html">PostResponse</a>&gt;</dt>
+    <dd><p>A task containing the post response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_Finalize_" data-uid="dotNETLemmy.LemmyHttpClient.Finalize*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_Finalize" data-uid="dotNETLemmy.LemmyHttpClient.Finalize">
+  ~LemmyHttpClient()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L684"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ~LemmyHttpClient()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_FollowCommunity_" data-uid="dotNETLemmy.LemmyHttpClient.FollowCommunity*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_FollowCommunity_dotNETLemmy_Types_FollowCommunityForm_" data-uid="dotNETLemmy.LemmyHttpClient.FollowCommunity(dotNETLemmy.Types.FollowCommunityForm)">
+  FollowCommunity(FollowCommunityForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Follows the community using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CommunityResponse&gt; FollowCommunity(FollowCommunityForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.FollowCommunityForm.html">FollowCommunityForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.CommunityResponse.html">CommunityResponse</a>&gt;</dt>
+    <dd><p>A task containing the community response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_GetBannedPersons_" data-uid="dotNETLemmy.LemmyHttpClient.GetBannedPersons*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_GetBannedPersons_dotNETLemmy_Types_GetBannedPersonsForm_" data-uid="dotNETLemmy.LemmyHttpClient.GetBannedPersons(dotNETLemmy.Types.GetBannedPersonsForm)">
+  GetBannedPersons(GetBannedPersonsForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the banned persons using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;BannedPersonsResponse&gt; GetBannedPersons(GetBannedPersonsForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.GetBannedPersonsForm.html">GetBannedPersonsForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.BannedPersonsResponse.html">BannedPersonsResponse</a>&gt;</dt>
+    <dd><p>A task containing the banned persons response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_GetCaptcha_" data-uid="dotNETLemmy.LemmyHttpClient.GetCaptcha*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_GetCaptcha_dotNETLemmy_Types_GetCaptchaForm_" data-uid="dotNETLemmy.LemmyHttpClient.GetCaptcha(dotNETLemmy.Types.GetCaptchaForm)">
+  GetCaptcha(GetCaptchaForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the captcha using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GetCaptchaResponse&gt; GetCaptcha(GetCaptchaForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.GetCaptchaForm.html">GetCaptchaForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.GetCaptchaResponse.html">GetCaptchaResponse</a>&gt;</dt>
+    <dd><p>A task containing the get captcha response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_GetComments_" data-uid="dotNETLemmy.LemmyHttpClient.GetComments*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_GetComments_dotNETLemmy_Types_GetCommentsForm_" data-uid="dotNETLemmy.LemmyHttpClient.GetComments(dotNETLemmy.Types.GetCommentsForm)">
+  GetComments(GetCommentsForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the comments using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GetCommentsResponse&gt; GetComments(GetCommentsForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.GetCommentsForm.html">GetCommentsForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.GetCommentsResponse.html">GetCommentsResponse</a>&gt;</dt>
+    <dd><p>A task containing the get comments response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_GetCommunity_" data-uid="dotNETLemmy.LemmyHttpClient.GetCommunity*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_GetCommunity_dotNETLemmy_Types_GetCommunityForm_" data-uid="dotNETLemmy.LemmyHttpClient.GetCommunity(dotNETLemmy.Types.GetCommunityForm)">
+  GetCommunity(GetCommunityForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the community using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GetCommunityResponse&gt; GetCommunity(GetCommunityForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.GetCommunityForm.html">GetCommunityForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.GetCommunityResponse.html">GetCommunityResponse</a>&gt;</dt>
+    <dd><p>A task containing the get community response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_GetModlog_" data-uid="dotNETLemmy.LemmyHttpClient.GetModlog*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_GetModlog_dotNETLemmy_Types_GetModlogForm_" data-uid="dotNETLemmy.LemmyHttpClient.GetModlog(dotNETLemmy.Types.GetModlogForm)">
+  GetModlog(GetModlogForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the modlog using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GetModlogResponse&gt; GetModlog(GetModlogForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.GetModlogForm.html">GetModlogForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.GetModlogResponse.html">GetModlogResponse</a>&gt;</dt>
+    <dd><p>A task containing the get modlog response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_GetPersonDetails_" data-uid="dotNETLemmy.LemmyHttpClient.GetPersonDetails*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_GetPersonDetails_dotNETLemmy_Types_GetPersonDetailsForm_" data-uid="dotNETLemmy.LemmyHttpClient.GetPersonDetails(dotNETLemmy.Types.GetPersonDetailsForm)">
+  GetPersonDetails(GetPersonDetailsForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the person details using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GetPersonDetailsResponse&gt; GetPersonDetails(GetPersonDetailsForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.GetPersonDetailsForm.html">GetPersonDetailsForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.GetPersonDetailsResponse.html">GetPersonDetailsResponse</a>&gt;</dt>
+    <dd><p>A task containing the get person details response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_GetPersonMentions_" data-uid="dotNETLemmy.LemmyHttpClient.GetPersonMentions*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_GetPersonMentions_dotNETLemmy_Types_GetPersonMentionsForm_" data-uid="dotNETLemmy.LemmyHttpClient.GetPersonMentions(dotNETLemmy.Types.GetPersonMentionsForm)">
+  GetPersonMentions(GetPersonMentionsForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the person mentions using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GetPersonMentionsResponse&gt; GetPersonMentions(GetPersonMentionsForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.GetPersonMentionsForm.html">GetPersonMentionsForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.GetPersonMentionsResponse.html">GetPersonMentionsResponse</a>&gt;</dt>
+    <dd><p>A task containing the get person mentions response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_GetPost_" data-uid="dotNETLemmy.LemmyHttpClient.GetPost*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_GetPost_dotNETLemmy_Types_GetPostForm_" data-uid="dotNETLemmy.LemmyHttpClient.GetPost(dotNETLemmy.Types.GetPostForm)">
+  GetPost(GetPostForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the post using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GetPostResponse&gt; GetPost(GetPostForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.GetPostForm.html">GetPostForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.GetPostResponse.html">GetPostResponse</a>&gt;</dt>
+    <dd><p>A task containing the get post response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_GetPosts_" data-uid="dotNETLemmy.LemmyHttpClient.GetPosts*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_GetPosts_dotNETLemmy_Types_GetPostsForm_" data-uid="dotNETLemmy.LemmyHttpClient.GetPosts(dotNETLemmy.Types.GetPostsForm)">
+  GetPosts(GetPostsForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the posts using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GetPostsResponse&gt; GetPosts(GetPostsForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.GetPostsForm.html">GetPostsForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.GetPostsResponse.html">GetPostsResponse</a>&gt;</dt>
+    <dd><p>A task containing the get posts response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_GetPrivateMessages_" data-uid="dotNETLemmy.LemmyHttpClient.GetPrivateMessages*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_GetPrivateMessages_dotNETLemmy_Types_GetPrivateMessagesForm_" data-uid="dotNETLemmy.LemmyHttpClient.GetPrivateMessages(dotNETLemmy.Types.GetPrivateMessagesForm)">
+  GetPrivateMessages(GetPrivateMessagesForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L347"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the private messages using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PrivateMessagesResponse&gt; GetPrivateMessages(GetPrivateMessagesForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.GetPrivateMessagesForm.html">GetPrivateMessagesForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PrivateMessagesResponse.html">PrivateMessagesResponse</a>&gt;</dt>
+    <dd><p>A task containing the private messages response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_GetReplies_" data-uid="dotNETLemmy.LemmyHttpClient.GetReplies*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_GetReplies_dotNETLemmy_Types_GetRepliesForm_" data-uid="dotNETLemmy.LemmyHttpClient.GetReplies(dotNETLemmy.Types.GetRepliesForm)">
+  GetReplies(GetRepliesForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the replies using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GetRepliesResponse&gt; GetReplies(GetRepliesForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.GetRepliesForm.html">GetRepliesForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.GetRepliesResponse.html">GetRepliesResponse</a>&gt;</dt>
+    <dd><p>A task containing the get replies response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_GetReportCount_" data-uid="dotNETLemmy.LemmyHttpClient.GetReportCount*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_GetReportCount_dotNETLemmy_Types_GetReportCountForm_" data-uid="dotNETLemmy.LemmyHttpClient.GetReportCount(dotNETLemmy.Types.GetReportCountForm)">
+  GetReportCount(GetReportCountForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L363"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the report count using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GetReportCountResponse&gt; GetReportCount(GetReportCountForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.GetReportCountForm.html">GetReportCountForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.GetReportCountResponse.html">GetReportCountResponse</a>&gt;</dt>
+    <dd><p>A task containing the get report count response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_GetSite_" data-uid="dotNETLemmy.LemmyHttpClient.GetSite*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_GetSite_dotNETLemmy_Types_GetSiteForm_" data-uid="dotNETLemmy.LemmyHttpClient.GetSite(dotNETLemmy.Types.GetSiteForm)">
+  GetSite(GetSiteForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the site using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GetSiteResponse&gt; GetSite(GetSiteForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.GetSiteForm.html">GetSiteForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.GetSiteResponse.html">GetSiteResponse</a>&gt;</dt>
+    <dd><p>A task containing the get site response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_GetSiteMetadata_" data-uid="dotNETLemmy.LemmyHttpClient.GetSiteMetadata*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_GetSiteMetadata_dotNETLemmy_Types_GetSiteMetadataForm_" data-uid="dotNETLemmy.LemmyHttpClient.GetSiteMetadata(dotNETLemmy.Types.GetSiteMetadataForm)">
+  GetSiteMetadata(GetSiteMetadataForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the site metadata using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GetSiteMetadataResponse&gt; GetSiteMetadata(GetSiteMetadataForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.GetSiteMetadataForm.html">GetSiteMetadataForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.GetSiteMetadataResponse.html">GetSiteMetadataResponse</a>&gt;</dt>
+    <dd><p>A task containing the get site metadata response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_GetUnreadCount_" data-uid="dotNETLemmy.LemmyHttpClient.GetUnreadCount*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_GetUnreadCount_dotNETLemmy_Types_GetUnreadCountForm_" data-uid="dotNETLemmy.LemmyHttpClient.GetUnreadCount(dotNETLemmy.Types.GetUnreadCountForm)">
+  GetUnreadCount(GetUnreadCountForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L387"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the unread count using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GetUnreadCountResponse&gt; GetUnreadCount(GetUnreadCountForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.GetUnreadCountForm.html">GetUnreadCountForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.GetUnreadCountResponse.html">GetUnreadCountResponse</a>&gt;</dt>
+    <dd><p>A task containing the get unread count response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_GetUnreadRegistrationApplicationCount_" data-uid="dotNETLemmy.LemmyHttpClient.GetUnreadRegistrationApplicationCount*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_GetUnreadRegistrationApplicationCount_dotNETLemmy_Types_GetUnreadRegistrationApplicationCountForm_" data-uid="dotNETLemmy.LemmyHttpClient.GetUnreadRegistrationApplicationCount(dotNETLemmy.Types.GetUnreadRegistrationApplicationCountForm)">
+  GetUnreadRegistrationApplicationCount(GetUnreadRegistrationApplicationCountForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L395"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the unread registration application count using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GetUnreadRegistrationApplicationCountResponse&gt; GetUnreadRegistrationApplicationCount(GetUnreadRegistrationApplicationCountForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.GetUnreadRegistrationApplicationCountForm.html">GetUnreadRegistrationApplicationCountForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.GetUnreadRegistrationApplicationCountResponse.html">GetUnreadRegistrationApplicationCountResponse</a>&gt;</dt>
+    <dd><p>A task containing the get unread registration application count response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_LeaveAdmin_" data-uid="dotNETLemmy.LemmyHttpClient.LeaveAdmin*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_LeaveAdmin_dotNETLemmy_Types_LeaveAdminForm_" data-uid="dotNETLemmy.LemmyHttpClient.LeaveAdmin(dotNETLemmy.Types.LeaveAdminForm)">
+  LeaveAdmin(LeaveAdminForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L405"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Leaves the admin using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GetSiteResponse&gt; LeaveAdmin(LeaveAdminForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.LeaveAdminForm.html">LeaveAdminForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.GetSiteResponse.html">GetSiteResponse</a>&gt;</dt>
+    <dd><p>A task containing the get site response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_LikeComment_" data-uid="dotNETLemmy.LemmyHttpClient.LikeComment*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_LikeComment_dotNETLemmy_Types_LikeCommentForm_" data-uid="dotNETLemmy.LemmyHttpClient.LikeComment(dotNETLemmy.Types.LikeCommentForm)">
+  LikeComment(LikeCommentForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L413"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Likes the comment using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CommentResponse&gt; LikeComment(LikeCommentForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.LikeCommentForm.html">LikeCommentForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.CommentResponse.html">CommentResponse</a>&gt;</dt>
+    <dd><p>A task containing the comment response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_LikePost_" data-uid="dotNETLemmy.LemmyHttpClient.LikePost*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_LikePost_dotNETLemmy_Types_LikePostForm_" data-uid="dotNETLemmy.LemmyHttpClient.LikePost(dotNETLemmy.Types.LikePostForm)">
+  LikePost(LikePostForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Likes the post using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PostResponse&gt; LikePost(LikePostForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.LikePostForm.html">LikePostForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PostResponse.html">PostResponse</a>&gt;</dt>
+    <dd><p>A task containing the post response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_ListCommentReports_" data-uid="dotNETLemmy.LemmyHttpClient.ListCommentReports*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_ListCommentReports_dotNETLemmy_Types_ListCommentReportsForm_" data-uid="dotNETLemmy.LemmyHttpClient.ListCommentReports(dotNETLemmy.Types.ListCommentReportsForm)">
+  ListCommentReports(ListCommentReportsForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L429"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Lists the comment reports using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ListCommentReportsResponse&gt; ListCommentReports(ListCommentReportsForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.ListCommentReportsForm.html">ListCommentReportsForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.ListCommentReportsResponse.html">ListCommentReportsResponse</a>&gt;</dt>
+    <dd><p>A task containing the list comment reports response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_ListCommunities_" data-uid="dotNETLemmy.LemmyHttpClient.ListCommunities*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_ListCommunities_dotNETLemmy_Types_ListCommunitiesForm_" data-uid="dotNETLemmy.LemmyHttpClient.ListCommunities(dotNETLemmy.Types.ListCommunitiesForm)">
+  ListCommunities(ListCommunitiesForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L437"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Lists the communities using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ListCommunitiesResponse&gt; ListCommunities(ListCommunitiesForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.ListCommunitiesForm.html">ListCommunitiesForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.ListCommunitiesResponse.html">ListCommunitiesResponse</a>&gt;</dt>
+    <dd><p>A task containing the list communities response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_ListPostReports_" data-uid="dotNETLemmy.LemmyHttpClient.ListPostReports*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_ListPostReports_dotNETLemmy_Types_ListPostReportsForm_" data-uid="dotNETLemmy.LemmyHttpClient.ListPostReports(dotNETLemmy.Types.ListPostReportsForm)">
+  ListPostReports(ListPostReportsForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L445"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Lists the post reports using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ListPostReportsResponse&gt; ListPostReports(ListPostReportsForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.ListPostReportsForm.html">ListPostReportsForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.ListPostReportsResponse.html">ListPostReportsResponse</a>&gt;</dt>
+    <dd><p>A task containing the list post reports response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_ListPrivateMessageReports_" data-uid="dotNETLemmy.LemmyHttpClient.ListPrivateMessageReports*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_ListPrivateMessageReports_dotNETLemmy_Types_ListPrivateMessageReportsForm_" data-uid="dotNETLemmy.LemmyHttpClient.ListPrivateMessageReports(dotNETLemmy.Types.ListPrivateMessageReportsForm)">
+  ListPrivateMessageReports(ListPrivateMessageReportsForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L453"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Lists the private message reports using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ListPrivateMessageReportsResponse&gt; ListPrivateMessageReports(ListPrivateMessageReportsForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.ListPrivateMessageReportsForm.html">ListPrivateMessageReportsForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.ListPrivateMessageReportsResponse.html">ListPrivateMessageReportsResponse</a>&gt;</dt>
+    <dd><p>A task containing the list private message reports response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_ListRegistrationApplications_" data-uid="dotNETLemmy.LemmyHttpClient.ListRegistrationApplications*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_ListRegistrationApplications_dotNETLemmy_Types_ListRegistrationApplicationsForm_" data-uid="dotNETLemmy.LemmyHttpClient.ListRegistrationApplications(dotNETLemmy.Types.ListRegistrationApplicationsForm)">
+  ListRegistrationApplications(ListRegistrationApplicationsForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L461"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Lists the registration applications using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ListRegistrationApplicationsResponse&gt; ListRegistrationApplications(ListRegistrationApplicationsForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.ListRegistrationApplicationsForm.html">ListRegistrationApplicationsForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.ListRegistrationApplicationsResponse.html">ListRegistrationApplicationsResponse</a>&gt;</dt>
+    <dd><p>A task containing the list registration applications response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_LockPost_" data-uid="dotNETLemmy.LemmyHttpClient.LockPost*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_LockPost_dotNETLemmy_Types_LockPostForm_" data-uid="dotNETLemmy.LemmyHttpClient.LockPost(dotNETLemmy.Types.LockPostForm)">
+  LockPost(LockPostForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L469"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Locks the post using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PostResponse&gt; LockPost(LockPostForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.LockPostForm.html">LockPostForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PostResponse.html">PostResponse</a>&gt;</dt>
+    <dd><p>A task containing the post response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_Login_" data-uid="dotNETLemmy.LemmyHttpClient.Login*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_Login_dotNETLemmy_Types_LoginForm_" data-uid="dotNETLemmy.LemmyHttpClient.Login(dotNETLemmy.Types.LoginForm)">
+  Login(LoginForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L477"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Logins the form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;LoginResponse&gt; Login(LoginForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.LoginForm.html">LoginForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.LoginResponse.html">LoginResponse</a>&gt;</dt>
+    <dd><p>A task containing the login response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_MarkAllAsRead_" data-uid="dotNETLemmy.LemmyHttpClient.MarkAllAsRead*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_MarkAllAsRead_dotNETLemmy_Types_MarkAllAsReadForm_" data-uid="dotNETLemmy.LemmyHttpClient.MarkAllAsRead(dotNETLemmy.Types.MarkAllAsReadForm)">
+  MarkAllAsRead(MarkAllAsReadForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L485"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Marks the all as read using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GetRepliesResponse&gt; MarkAllAsRead(MarkAllAsReadForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.MarkAllAsReadForm.html">MarkAllAsReadForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.GetRepliesResponse.html">GetRepliesResponse</a>&gt;</dt>
+    <dd><p>A task containing the get replies response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_MarkCommentReplyAsRead_" data-uid="dotNETLemmy.LemmyHttpClient.MarkCommentReplyAsRead*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_MarkCommentReplyAsRead_dotNETLemmy_Types_MarkCommentReplyAsReadForm_" data-uid="dotNETLemmy.LemmyHttpClient.MarkCommentReplyAsRead(dotNETLemmy.Types.MarkCommentReplyAsReadForm)">
+  MarkCommentReplyAsRead(MarkCommentReplyAsReadForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L493"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Marks the comment reply as read using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CommentResponse&gt; MarkCommentReplyAsRead(MarkCommentReplyAsReadForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.MarkCommentReplyAsReadForm.html">MarkCommentReplyAsReadForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.CommentResponse.html">CommentResponse</a>&gt;</dt>
+    <dd><p>A task containing the comment response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_MarkPersonMentionAsRead_" data-uid="dotNETLemmy.LemmyHttpClient.MarkPersonMentionAsRead*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_MarkPersonMentionAsRead_dotNETLemmy_Types_MarkPersonMentionAsReadForm_" data-uid="dotNETLemmy.LemmyHttpClient.MarkPersonMentionAsRead(dotNETLemmy.Types.MarkPersonMentionAsReadForm)">
+  MarkPersonMentionAsRead(MarkPersonMentionAsReadForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L501"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Marks the person mention as read using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PersonMentionResponse&gt; MarkPersonMentionAsRead(MarkPersonMentionAsReadForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.MarkPersonMentionAsReadForm.html">MarkPersonMentionAsReadForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PersonMentionResponse.html">PersonMentionResponse</a>&gt;</dt>
+    <dd><p>A task containing the person mention response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_MarkPostAsRead_" data-uid="dotNETLemmy.LemmyHttpClient.MarkPostAsRead*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_MarkPostAsRead_dotNETLemmy_Types_MarkPostAsReadForm_" data-uid="dotNETLemmy.LemmyHttpClient.MarkPostAsRead(dotNETLemmy.Types.MarkPostAsReadForm)">
+  MarkPostAsRead(MarkPostAsReadForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L509"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Marks the post as read using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PostResponse&gt; MarkPostAsRead(MarkPostAsReadForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.MarkPostAsReadForm.html">MarkPostAsReadForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PostResponse.html">PostResponse</a>&gt;</dt>
+    <dd><p>A task containing the post response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_MarkPrivateMessageAsRead_" data-uid="dotNETLemmy.LemmyHttpClient.MarkPrivateMessageAsRead*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_MarkPrivateMessageAsRead_dotNETLemmy_Types_MarkPrivateMessageAsReadForm_" data-uid="dotNETLemmy.LemmyHttpClient.MarkPrivateMessageAsRead(dotNETLemmy.Types.MarkPrivateMessageAsReadForm)">
+  MarkPrivateMessageAsRead(MarkPrivateMessageAsReadForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L517"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Marks the private message as read using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PrivateMessageResponse&gt; MarkPrivateMessageAsRead(MarkPrivateMessageAsReadForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.MarkPrivateMessageAsReadForm.html">MarkPrivateMessageAsReadForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PrivateMessageResponse.html">PrivateMessageResponse</a>&gt;</dt>
+    <dd><p>A task containing the private message response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_PasswordChange_" data-uid="dotNETLemmy.LemmyHttpClient.PasswordChange*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_PasswordChange_dotNETLemmy_Types_PasswordChangeForm_" data-uid="dotNETLemmy.LemmyHttpClient.PasswordChange(dotNETLemmy.Types.PasswordChangeForm)">
+  PasswordChange(PasswordChangeForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L525"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Passwords the change using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;LoginResponse&gt; PasswordChange(PasswordChangeForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.PasswordChangeForm.html">PasswordChangeForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.LoginResponse.html">LoginResponse</a>&gt;</dt>
+    <dd><p>A task containing the login response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_PasswordReset_" data-uid="dotNETLemmy.LemmyHttpClient.PasswordReset*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_PasswordReset_dotNETLemmy_Types_PasswordResetForm_" data-uid="dotNETLemmy.LemmyHttpClient.PasswordReset(dotNETLemmy.Types.PasswordResetForm)">
+  PasswordReset(PasswordResetForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L533"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Passwords the reset using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PasswordResetResponse&gt; PasswordReset(PasswordResetForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.PasswordResetForm.html">PasswordResetForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PasswordResetResponse.html">PasswordResetResponse</a>&gt;</dt>
+    <dd><p>A task containing the password reset response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_PurgeComment_" data-uid="dotNETLemmy.LemmyHttpClient.PurgeComment*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_PurgeComment_dotNETLemmy_Types_PurgeCommentForm_" data-uid="dotNETLemmy.LemmyHttpClient.PurgeComment(dotNETLemmy.Types.PurgeCommentForm)">
+  PurgeComment(PurgeCommentForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L541"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Purges the comment using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PurgeItemResponse&gt; PurgeComment(PurgeCommentForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.PurgeCommentForm.html">PurgeCommentForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PurgeItemResponse.html">PurgeItemResponse</a>&gt;</dt>
+    <dd><p>A task containing the purge item response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_PurgeCommunity_" data-uid="dotNETLemmy.LemmyHttpClient.PurgeCommunity*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_PurgeCommunity_dotNETLemmy_Types_PurgeCommunityForm_" data-uid="dotNETLemmy.LemmyHttpClient.PurgeCommunity(dotNETLemmy.Types.PurgeCommunityForm)">
+  PurgeCommunity(PurgeCommunityForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L549"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Purges the community using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PurgeItemResponse&gt; PurgeCommunity(PurgeCommunityForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.PurgeCommunityForm.html">PurgeCommunityForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PurgeItemResponse.html">PurgeItemResponse</a>&gt;</dt>
+    <dd><p>A task containing the purge item response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_PurgePerson_" data-uid="dotNETLemmy.LemmyHttpClient.PurgePerson*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_PurgePerson_dotNETLemmy_Types_PurgePersonForm_" data-uid="dotNETLemmy.LemmyHttpClient.PurgePerson(dotNETLemmy.Types.PurgePersonForm)">
+  PurgePerson(PurgePersonForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L557"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Purges the person using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PurgeItemResponse&gt; PurgePerson(PurgePersonForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.PurgePersonForm.html">PurgePersonForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PurgeItemResponse.html">PurgeItemResponse</a>&gt;</dt>
+    <dd><p>A task containing the purge item response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_PurgePost_" data-uid="dotNETLemmy.LemmyHttpClient.PurgePost*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_PurgePost_dotNETLemmy_Types_PurgePostForm_" data-uid="dotNETLemmy.LemmyHttpClient.PurgePost(dotNETLemmy.Types.PurgePostForm)">
+  PurgePost(PurgePostForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L565"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Purges the post using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PurgeItemResponse&gt; PurgePost(PurgePostForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.PurgePostForm.html">PurgePostForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PurgeItemResponse.html">PurgeItemResponse</a>&gt;</dt>
+    <dd><p>A task containing the purge item response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_Register_" data-uid="dotNETLemmy.LemmyHttpClient.Register*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_Register_dotNETLemmy_Types_RegisterForm_" data-uid="dotNETLemmy.LemmyHttpClient.Register(dotNETLemmy.Types.RegisterForm)">
+  Register(RegisterForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L573"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Registers the form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;LoginResponse&gt; Register(RegisterForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.RegisterForm.html">RegisterForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.LoginResponse.html">LoginResponse</a>&gt;</dt>
+    <dd><p>A task containing the login response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_RemoveComment_" data-uid="dotNETLemmy.LemmyHttpClient.RemoveComment*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_RemoveComment_dotNETLemmy_Types_RemoveCommentForm_" data-uid="dotNETLemmy.LemmyHttpClient.RemoveComment(dotNETLemmy.Types.RemoveCommentForm)">
+  RemoveComment(RemoveCommentForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L581"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes the comment using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CommentResponse&gt; RemoveComment(RemoveCommentForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.RemoveCommentForm.html">RemoveCommentForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.CommentResponse.html">CommentResponse</a>&gt;</dt>
+    <dd><p>A task containing the comment response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_RemoveCommunity_" data-uid="dotNETLemmy.LemmyHttpClient.RemoveCommunity*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_RemoveCommunity_dotNETLemmy_Types_RemoveCommunityForm_" data-uid="dotNETLemmy.LemmyHttpClient.RemoveCommunity(dotNETLemmy.Types.RemoveCommunityForm)">
+  RemoveCommunity(RemoveCommunityForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L589"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes the community using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CommunityResponse&gt; RemoveCommunity(RemoveCommunityForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.RemoveCommunityForm.html">RemoveCommunityForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.CommunityResponse.html">CommunityResponse</a>&gt;</dt>
+    <dd><p>A task containing the community response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_ResolveCommentReport_" data-uid="dotNETLemmy.LemmyHttpClient.ResolveCommentReport*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_ResolveCommentReport_dotNETLemmy_Types_ResolveCommentReportForm_" data-uid="dotNETLemmy.LemmyHttpClient.ResolveCommentReport(dotNETLemmy.Types.ResolveCommentReportForm)">
+  ResolveCommentReport(ResolveCommentReportForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L597"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resolves the comment report using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CommentReportResponse&gt; ResolveCommentReport(ResolveCommentReportForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.ResolveCommentReportForm.html">ResolveCommentReportForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.CommentReportResponse.html">CommentReportResponse</a>&gt;</dt>
+    <dd><p>A task containing the comment report response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_ResolveObject_" data-uid="dotNETLemmy.LemmyHttpClient.ResolveObject*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_ResolveObject_dotNETLemmy_Types_ResolveObjectForm_" data-uid="dotNETLemmy.LemmyHttpClient.ResolveObject(dotNETLemmy.Types.ResolveObjectForm)">
+  ResolveObject(ResolveObjectForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L605"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resolves the object using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ResolveObjectResponse&gt; ResolveObject(ResolveObjectForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.ResolveObjectForm.html">ResolveObjectForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.ResolveObjectResponse.html">ResolveObjectResponse</a>&gt;</dt>
+    <dd><p>A task containing the resolve object response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_ResolvePostReport_" data-uid="dotNETLemmy.LemmyHttpClient.ResolvePostReport*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_ResolvePostReport_dotNETLemmy_Types_ResolvePostReportForm_" data-uid="dotNETLemmy.LemmyHttpClient.ResolvePostReport(dotNETLemmy.Types.ResolvePostReportForm)">
+  ResolvePostReport(ResolvePostReportForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L613"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resolves the post report using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PostReportResponse&gt; ResolvePostReport(ResolvePostReportForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.ResolvePostReportForm.html">ResolvePostReportForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PostReportResponse.html">PostReportResponse</a>&gt;</dt>
+    <dd><p>A task containing the post report response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_ResolvePrivateMessageReport_" data-uid="dotNETLemmy.LemmyHttpClient.ResolvePrivateMessageReport*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_ResolvePrivateMessageReport_dotNETLemmy_Types_ResolvePrivateMessageReportForm_" data-uid="dotNETLemmy.LemmyHttpClient.ResolvePrivateMessageReport(dotNETLemmy.Types.ResolvePrivateMessageReportForm)">
+  ResolvePrivateMessageReport(ResolvePrivateMessageReportForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L621"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resolves the private message report using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PrivateMessageReportResponse&gt; ResolvePrivateMessageReport(ResolvePrivateMessageReportForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.ResolvePrivateMessageReportForm.html">ResolvePrivateMessageReportForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PrivateMessageReportResponse.html">PrivateMessageReportResponse</a>&gt;</dt>
+    <dd><p>A task containing the private message report response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_SaveComment_" data-uid="dotNETLemmy.LemmyHttpClient.SaveComment*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_SaveComment_dotNETLemmy_Types_SaveCommentForm_" data-uid="dotNETLemmy.LemmyHttpClient.SaveComment(dotNETLemmy.Types.SaveCommentForm)">
+  SaveComment(SaveCommentForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L629"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves the comment using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CommentResponse&gt; SaveComment(SaveCommentForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.SaveCommentForm.html">SaveCommentForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.CommentResponse.html">CommentResponse</a>&gt;</dt>
+    <dd><p>A task containing the comment response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_SavePost_" data-uid="dotNETLemmy.LemmyHttpClient.SavePost*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_SavePost_dotNETLemmy_Types_SavePostForm_" data-uid="dotNETLemmy.LemmyHttpClient.SavePost(dotNETLemmy.Types.SavePostForm)">
+  SavePost(SavePostForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L637"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves the post using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PostResponse&gt; SavePost(SavePostForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.SavePostForm.html">SavePostForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.PostResponse.html">PostResponse</a>&gt;</dt>
+    <dd><p>A task containing the post response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_SaveUserSettings_" data-uid="dotNETLemmy.LemmyHttpClient.SaveUserSettings*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_SaveUserSettings_dotNETLemmy_Types_SaveUserSettingsForm_" data-uid="dotNETLemmy.LemmyHttpClient.SaveUserSettings(dotNETLemmy.Types.SaveUserSettingsForm)">
+  SaveUserSettings(SaveUserSettingsForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L645"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves the user settings using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;LoginResponse&gt; SaveUserSettings(SaveUserSettingsForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.SaveUserSettingsForm.html">SaveUserSettingsForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.LoginResponse.html">LoginResponse</a>&gt;</dt>
+    <dd><p>A task containing the login response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_Search_" data-uid="dotNETLemmy.LemmyHttpClient.Search*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_Search_dotNETLemmy_Types_SearchForm_" data-uid="dotNETLemmy.LemmyHttpClient.Search(dotNETLemmy.Types.SearchForm)">
+  Search(SearchForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L653"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Searches the form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;SearchResponse&gt; Search(SearchForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.SearchForm.html">SearchForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.SearchResponse.html">SearchResponse</a>&gt;</dt>
+    <dd><p>A task containing the search response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_SendAsync_" data-uid="dotNETLemmy.LemmyHttpClient.SendAsync*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_SendAsync__1_dotNETLemmy_Types_IForm_" data-uid="dotNETLemmy.LemmyHttpClient.SendAsync``1(dotNETLemmy.Types.IForm)">
+  SendAsync&lt;TResponse&gt;(IForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends an asynchronous HTTP request and returns the deserialized response.</p>
+<p>
+Avoid calling directly unless the Lemmy instance requires non-standard API calls.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TResponse&gt; SendAsync&lt;TResponse&gt;(IForm form) where TResponse : Response, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.IForm.html">IForm</a></dt>
+    <dd><p>The form data to be sent, inherits <a class="xref" href="dotNETLemmy.Types.IForm.html">IForm</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResponse&gt;</dt>
+    <dd><p>The deserialized response format</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TResponse</code></dt>
+    <dd><p>Deserialized response format, inherits <a class="xref" href="dotNETLemmy.Types.Response.html">Response</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_TransferCommunity_" data-uid="dotNETLemmy.LemmyHttpClient.TransferCommunity*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_TransferCommunity_dotNETLemmy_Types_TransferCommunityForm_" data-uid="dotNETLemmy.LemmyHttpClient.TransferCommunity(dotNETLemmy.Types.TransferCommunityForm)">
+  TransferCommunity(TransferCommunityForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L661"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Transfers the community using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GetCommunityResponse&gt; TransferCommunity(TransferCommunityForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.TransferCommunityForm.html">TransferCommunityForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.GetCommunityResponse.html">GetCommunityResponse</a>&gt;</dt>
+    <dd><p>A task containing the get community response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="dotNETLemmy_LemmyHttpClient_VerifyEmail_" data-uid="dotNETLemmy.LemmyHttpClient.VerifyEmail*"></a>
+
+  <h3 id="dotNETLemmy_LemmyHttpClient_VerifyEmail_dotNETLemmy_Types_VerifyEmailForm_" data-uid="dotNETLemmy.LemmyHttpClient.VerifyEmail(dotNETLemmy.Types.VerifyEmailForm)">
+  VerifyEmail(VerifyEmailForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/SlyCedix/dotNETLemmy/blob/main/src/dotNETLemmy/src/LemmyHttpClient.cs/#L669"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies the email using the specified form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;VerifyEmailResponse&gt; VerifyEmail(VerifyEmailForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="dotNETLemmy.Types.VerifyEmailForm.html">VerifyEmailForm</a></dt>
+    <dd><p>The form</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="dotNETLemmy.Types.VerifyEmailResponse.html">VerifyEmailResponse</a>&gt;</dt>
+    <dd><p>A task containing the verify email response</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+
+</article>
+
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,2180 @@
+{
+  "homepages": [],
+  "source_base_path": "F:/Projects/Avalonia Sandbox/dotNETLemmy/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.LemmyHttpClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.LemmyHttpClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.ModAddCommunityView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.ModAddCommunityView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.AddAdminForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.AddAdminForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.AddAdminResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.AddAdminResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.AddModToCommunityForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.AddModToCommunityForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.AddModToCommunityResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.AddModToCommunityResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.AdminPurgeComment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.AdminPurgeComment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.AdminPurgeCommentView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.AdminPurgeCommentView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.AdminPurgeCommunity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.AdminPurgeCommunity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.AdminPurgeCommunityView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.AdminPurgeCommunityView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.AdminPurgePerson.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.AdminPurgePerson.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.AdminPurgePersonView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.AdminPurgePersonView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.AdminPurgePost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.AdminPurgePost.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.AdminPurgePostView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.AdminPurgePostView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ApproveRegistrationApplicationForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ApproveRegistrationApplicationForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ApproveRegistrationApplicationResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ApproveRegistrationApplicationResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.BanFromCommunityForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.BanFromCommunityForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.BanFromCommunityResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.BanFromCommunityResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.BanPersonForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.BanPersonForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.BanPersonResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.BanPersonResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.BannedPersonsResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.BannedPersonsResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.BlockCommunityForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.BlockCommunityForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.BlockCommunityResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.BlockCommunityResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.BlockPersonForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.BlockPersonForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.BlockPersonResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.BlockPersonResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CaptchaResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CaptchaResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ChangePasswordForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ChangePasswordForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.Comment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.Comment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CommentAggregates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CommentAggregates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CommentReply.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CommentReply.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CommentReplyView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CommentReplyView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CommentReport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CommentReport.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CommentReportResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CommentReportResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CommentReportView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CommentReportView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CommentResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CommentResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CommentSortType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CommentSortType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CommentView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CommentView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CommunityAggregates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CommunityAggregates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CommunityBlockView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CommunityBlockView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CommunityFollowerView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CommunityFollowerView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CommunityModeratorView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CommunityModeratorView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CommunityResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CommunityResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CommunitySafe.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CommunitySafe.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CommunityView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CommunityView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CreateCommentForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CreateCommentForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CreateCommentReportForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CreateCommentReportForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CreateCommunityForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CreateCommunityForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CreatePostForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CreatePostForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CreatePostReportForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CreatePostReportForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CreatePrivateMessageForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CreatePrivateMessageForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CreatePrivateMessageReportForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CreatePrivateMessageReportForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.CreateSiteForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.CreateSiteForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.DeleteAccountForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.DeleteAccountForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.DeleteAccountResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.DeleteAccountResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.DeleteCommentForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.DeleteCommentForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.DeleteCommunityForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.DeleteCommunityForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.DeletePostForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.DeletePostForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.DeletePrivateMessageForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.DeletePrivateMessageForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.EditCommentForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.EditCommentForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.EditCommunityForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.EditCommunityForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.EditPostForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.EditPostForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.EditPrivateMessageForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.EditPrivateMessageForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.EditSiteForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.EditSiteForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.FeaturePostForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.FeaturePostForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.FederatedInstances.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.FederatedInstances.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.FollowCommunityForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.FollowCommunityForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetBannedPersonsForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetBannedPersonsForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetCaptchaForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetCaptchaForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetCaptchaResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetCaptchaResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetCommentsForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetCommentsForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetCommentsResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetCommentsResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetCommunityForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetCommunityForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetCommunityResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetCommunityResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetModlogForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetModlogForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetModlogResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetModlogResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetPersonDetailsForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetPersonDetailsForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetPersonDetailsResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetPersonDetailsResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetPersonMentionsForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetPersonMentionsForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetPersonMentionsResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetPersonMentionsResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetPostForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetPostForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetPostResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetPostResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetPostsForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetPostsForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetPostsResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetPostsResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetPrivateMessagesForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetPrivateMessagesForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetRepliesForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetRepliesForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetRepliesResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetRepliesResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetReportCountForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetReportCountForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetReportCountResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetReportCountResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetSiteForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetSiteForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetSiteMetadataForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetSiteMetadataForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetSiteMetadataResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetSiteMetadataResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetSiteResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetSiteResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetUnreadCountForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetUnreadCountForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetUnreadCountResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetUnreadCountResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetUnreadRegistrationApplicationCountForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetUnreadRegistrationApplicationCountForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.GetUnreadRegistrationApplicationCountResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.GetUnreadRegistrationApplicationCountResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.IForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.IForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.IResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.IResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.Language.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.Language.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.LeaveAdminForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.LeaveAdminForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.LikeCommentForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.LikeCommentForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.LikePostForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.LikePostForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ListCommentReportsForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ListCommentReportsForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ListCommentReportsResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ListCommentReportsResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ListCommunitiesForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ListCommunitiesForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ListCommunitiesResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ListCommunitiesResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ListPostReportsForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ListPostReportsForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ListPostReportsResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ListPostReportsResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ListPrivateMessageReportsForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ListPrivateMessageReportsForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ListPrivateMessageReportsResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ListPrivateMessageReportsResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ListRegistrationApplicationsForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ListRegistrationApplicationsForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ListRegistrationApplicationsResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ListRegistrationApplicationsResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ListingType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ListingType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.LocalSite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.LocalSite.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.LocalSiteRateLimit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.LocalSiteRateLimit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.LocalUserSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.LocalUserSettings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.LocalUserSettingsView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.LocalUserSettingsView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.LockPostForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.LockPostForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.LoginForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.LoginForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.LoginResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.LoginResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.MarkAllAsReadForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.MarkAllAsReadForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.MarkCommentReplyAsReadForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.MarkCommentReplyAsReadForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.MarkPersonMentionAsReadForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.MarkPersonMentionAsReadForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.MarkPostAsReadForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.MarkPostAsReadForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.MarkPrivateMessageAsReadForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.MarkPrivateMessageAsReadForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ModAdd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ModAdd.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ModAddCommunity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ModAddCommunity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ModAddCommunityView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ModAddCommunityView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ModAddView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ModAddView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ModBan.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ModBan.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ModBanFromCommunity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ModBanFromCommunity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ModBanFromCommunityView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ModBanFromCommunityView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ModBanView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ModBanView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ModFeaturePost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ModFeaturePost.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ModFeaturePostView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ModFeaturePostView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ModLockPost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ModLockPost.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ModLockPostView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ModLockPostView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ModRemoveComment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ModRemoveComment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ModRemoveCommentView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ModRemoveCommentView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ModRemoveCommunity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ModRemoveCommunity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ModRemoveCommunityView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ModRemoveCommunityView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ModRemovePost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ModRemovePost.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ModRemovePostView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ModRemovePostView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ModTransferCommunity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ModTransferCommunity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ModTransferCommunityView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ModTransferCommunityView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ModlogActionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ModlogActionType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.MyUserInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.MyUserInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PasswordChangeForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PasswordChangeForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PasswordResetForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PasswordResetForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PasswordResetResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PasswordResetResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PersonAggregates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PersonAggregates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PersonBlockView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PersonBlockView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PersonMention.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PersonMention.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PersonMentionResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PersonMentionResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PersonMentionView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PersonMentionView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PersonSafe.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PersonSafe.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PersonViewSafe.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PersonViewSafe.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.Post.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.Post.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PostAggregates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PostAggregates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PostFeatureType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PostFeatureType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PostReport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PostReport.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PostReportResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PostReportResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PostReportView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PostReportView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PostResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PostResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PostView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PostView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PrivateMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PrivateMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PrivateMessageReport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PrivateMessageReport.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PrivateMessageReportResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PrivateMessageReportResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PrivateMessageReportView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PrivateMessageReportView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PrivateMessageResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PrivateMessageResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PrivateMessageView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PrivateMessageView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PrivateMessagesResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PrivateMessagesResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PurgeCommentForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PurgeCommentForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PurgeCommunityForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PurgeCommunityForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PurgeItemResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PurgeItemResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PurgePersonForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PurgePersonForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.PurgePostForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.PurgePostForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.RegisterForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.RegisterForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.RegistrationApplication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.RegistrationApplication.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.RegistrationApplicationView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.RegistrationApplicationView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.RegistrationMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.RegistrationMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.RemoveCommentForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.RemoveCommentForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.RemoveCommunityForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.RemoveCommunityForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.RemovePostForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.RemovePostForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ResolveCommentReportForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ResolveCommentReportForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ResolveObjectForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ResolveObjectForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ResolveObjectResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ResolveObjectResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ResolvePostReportForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ResolvePostReportForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.ResolvePrivateMessageReportForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.ResolvePrivateMessageReportForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.Response.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.Response.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.SaveCommentForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.SaveCommentForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.SavePostForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.SavePostForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.SaveUserSettingsForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.SaveUserSettingsForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.SearchForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.SearchForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.SearchResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.SearchResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.SearchType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.SearchType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.Site.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.Site.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.SiteAggregates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.SiteAggregates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.SiteMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.SiteMetadata.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.SiteResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.SiteResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.SiteView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.SiteView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.SortType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.SortType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.SubscribedType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.SubscribedType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.Tagline.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.Tagline.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.TransferCommunityForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.TransferCommunityForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.VerifyEmailForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.VerifyEmailForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.VerifyEmailResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.VerifyEmailResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.Types.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.Types.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/dotNETLemmy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/dotNETLemmy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
