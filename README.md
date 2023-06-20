@@ -3,7 +3,8 @@
 An implementation of the Lemmy HTTP API modeled after [lemmy-js-client](https://github.com/LemmyNet/lemmy-js-client).
 
 ## Usage
-[LemmyHttpClient Docs](xref:dotNETLemmy.API.LemmyHttpClient)
+
+[LemmyHttpClient Docs](https://slycedix.github.io/dotNETLemmy/api/dotNETLemmy.API.LemmyHttpClient.html)
 
 ```csharp
 // Logs into lemmy.ml and stores the authentication token to be used for further requests
