@@ -24,9 +24,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <None Include="..\dotNETLemmy.Docs\images\icon-512x512.png" Pack="true" PackagePath="\"/>
-        <None Include="..\README.md" Pack="true" PackagePath="\"/>
-        <None Include="..\LICENSE" Pack="true" PackagePath="\"/>
+        <None Include="..\dotNETLemmy.Docs\images\icon-512x512.png" Pack="true" PackagePath="\" />
+        <None Include="..\README.md" Pack="true" PackagePath="\" />
+        <None Include="..\LICENSE" Pack="true" PackagePath="\" />
     </ItemGroup>
 
 </Project>

@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class PostReportView
+public class PostReportView : IJsonObject
 {
     [JsonProperty] public CommunitySafe Community { get; private set; } = null!;
     [JsonProperty] public PostAggregates Counts { get; private set; } = null!;

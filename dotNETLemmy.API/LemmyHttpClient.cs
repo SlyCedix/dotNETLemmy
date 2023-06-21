@@ -50,7 +50,9 @@ public class LemmyHttpClient : IDisposable
     public async Task<TResponse> SendAsync<TResponse>(IForm form, CancellationToken cancellationToken = default)
         where TResponse : Response, new()
     {
-        var res = await Client.SendAsync(form.ToRequest(Client.BaseAddress!), cancellationToken);
+        var req = form.ToRequest(Client.BaseAddress!);
+        var res = await Client.SendAsync(req, cancellationToken);
+        Console.WriteLine(res);
         return await Response.FromHttpResponseMessage<TResponse>(res);
     }
 

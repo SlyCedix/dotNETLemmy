@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class SiteAggregates
+public class SiteAggregates : IJsonObject
 {
     [JsonProperty] public int Comments { get; private set; }
     [JsonProperty] public int Communities { get; private set; }

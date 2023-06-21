@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class CommentView
+public class CommentView : IJsonObject
 {
     [JsonProperty] public Comment Comment { get; private set; } = null!;
     [JsonProperty] public CommunitySafe Community { get; private set; } = null!;

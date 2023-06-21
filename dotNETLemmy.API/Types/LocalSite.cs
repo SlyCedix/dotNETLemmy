@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class LocalSite
+public class LocalSite : IJsonObject
 {
     [JsonProperty] public int ActorNameMaxLength { get; private set; }
     [JsonProperty] public bool ApplicationEmailAdmins { get; private set; }

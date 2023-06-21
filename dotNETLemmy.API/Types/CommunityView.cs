@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class CommunityView
+public class CommunityView : IJsonObject
 {
     [JsonProperty] public bool Blocked { get; private set; }
     [JsonProperty] public CommunitySafe Community { get; private set; } = null!;

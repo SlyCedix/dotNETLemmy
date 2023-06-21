@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class AdminPurgeCommentView
+public class AdminPurgeCommentView : IJsonObject
 {
     [JsonProperty] public PersonSafe? Admin { get; private set; }
     [JsonProperty] public AdminPurgeComment AdminPurgeComment { get; private set; } = null!;

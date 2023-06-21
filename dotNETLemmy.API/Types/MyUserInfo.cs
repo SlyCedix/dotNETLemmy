@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class MyUserInfo
+public class MyUserInfo : IJsonObject
 {
     [JsonProperty] public CommunityBlockView[] CommunityBlocks { get; private set; } = null!;
     [JsonProperty] public int[] DiscussionLanguages { get; private set; } = null!;

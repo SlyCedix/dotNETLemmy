@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class ModRemoveComment
+public class ModRemoveComment : IJsonObject
 {
     [JsonProperty] public int CommentId { get; private set; }
     [JsonProperty] public int Id { get; private set; }

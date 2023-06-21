@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class ModBanFromCommunity
+public class ModBanFromCommunity : IJsonObject
 {
     [JsonProperty] public bool? Banned { get; private set; }
     [JsonProperty] public int CommunityId { get; private set; }

@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class PrivateMessage
+public class PrivateMessage : IJsonObject
 {
     [JsonProperty] public string ApId { get; private set; } = string.Empty;
     [JsonProperty] public string Content { get; private set; } = string.Empty;

@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class ModLockPost
+public class ModLockPost : IJsonObject
 {
     [JsonProperty] public int Id { get; private set; }
     [JsonProperty] public bool? Locked { get; private set; }

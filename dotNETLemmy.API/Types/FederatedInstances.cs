@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class FederatedInstances
+public class FederatedInstances : IJsonObject
 {
     [JsonProperty] public string[]? Allowed { get; private set; }
     [JsonProperty] public string[]? Blocked { get; private set; }

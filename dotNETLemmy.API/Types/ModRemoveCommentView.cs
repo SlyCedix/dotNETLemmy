@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class ModRemoveCommentView
+public class ModRemoveCommentView : IJsonObject
 {
     [JsonProperty] public Comment Comment { get; private set; } = null!;
     [JsonProperty] public PersonSafe Commenter { get; private set; } = null!;

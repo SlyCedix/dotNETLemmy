@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class SiteMetadata
+public class SiteMetadata : IJsonObject
 {
     [JsonProperty] public string? Description { get; private set; }
     [JsonProperty] public string? Html { get; private set; }

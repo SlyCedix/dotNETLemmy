@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class PostReport
+public class PostReport : IJsonObject
 {
     [JsonProperty] public int CreatorId { get; private set; }
     [JsonProperty] public int Id { get; private set; }

@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class RegistrationApplication
+public class RegistrationApplication : IJsonObject
 {
     [JsonProperty] public int AdminId { get; private set; }
     [JsonProperty] public string Answer { get; private set; } = string.Empty;

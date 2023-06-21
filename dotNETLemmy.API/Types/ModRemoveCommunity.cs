@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class ModRemoveCommunity
+public class ModRemoveCommunity : IJsonObject
 {
     [JsonProperty] public int CommunityId { get; private set; }
     [JsonProperty] public string? Expires { get; private set; }

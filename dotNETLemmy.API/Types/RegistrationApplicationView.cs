@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class RegistrationApplicationView
+public class RegistrationApplicationView : IJsonObject
 {
     [JsonProperty] public PersonSafe? Admin { get; private set; }
     [JsonProperty] public PersonSafe Creator { get; private set; } = null!;

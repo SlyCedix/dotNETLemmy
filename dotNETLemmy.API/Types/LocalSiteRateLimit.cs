@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class LocalSiteRateLimit
+public class LocalSiteRateLimit : IJsonObject
 {
     [JsonProperty] public int Comment { get; private set; }
     [JsonProperty] public int CommentPerSecond { get; private set; }

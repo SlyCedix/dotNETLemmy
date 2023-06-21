@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class PersonSafe
+public class PersonSafe : IJsonObject
 {
     [JsonProperty] public string ActorId { get; private set; } = string.Empty;
     [JsonProperty] public bool Admin { get; private set; }

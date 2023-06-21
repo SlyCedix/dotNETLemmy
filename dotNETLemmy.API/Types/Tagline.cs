@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class Tagline
+public class Tagline : IJsonObject
 {
     [JsonProperty] public string Content { get; private set; } = string.Empty;
     [JsonProperty] public int Id { get; private set; }

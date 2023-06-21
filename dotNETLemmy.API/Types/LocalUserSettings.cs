@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class LocalUserSettings
+public class LocalUserSettings : IJsonObject
 {
     [JsonProperty] public bool AcceptedApplication { get; private set; }
     [JsonProperty] public int DefaultListingType { get; private set; }

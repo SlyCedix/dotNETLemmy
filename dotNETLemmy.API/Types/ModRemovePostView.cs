@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class ModRemovePostView
+public class ModRemovePostView : IJsonObject
 {
     [JsonProperty] public CommunitySafe Community { get; private set; } = null!;
     [JsonProperty] public ModRemovePost ModRemovePost { get; private set; } = null!;

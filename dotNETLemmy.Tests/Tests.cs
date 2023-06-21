@@ -1,5 +1,7 @@
+using System.Diagnostics;
 using System.Text.Json;
 using dotNETLemmy.API;
+using dotNETLemmy.API.Types;
 using dotNETLemmy.API.Types.Forms;
 
 namespace dotNETLemmy.Tests;
@@ -57,20 +59,33 @@ public class Tests
     }
     
     [Test]
-    public async Task ListCommunitiesTest()
+    public async Task CommunitiesTest()
     {
-        Assert.Multiple(() =>
-        {
-            Assert.That(_client, Is.Not.Null);
-            Assert.That(_jwt, Is.Not.Null);
-        });
+        Assert.That(_client, Is.Not.Null);
         
-        var listCommunitiesForm = new ListCommunitiesForm
-        {
-            Auth = _jwt
-        };
-
-        var listCommunitiesResponse = await _client!.ListCommunities(listCommunitiesForm);
+        var listCommunitiesResponse = await _client!.ListCommunities(new ListCommunitiesForm());
         Assert.That(listCommunitiesResponse.Communities, Has.Length);
+
+        var firstCommunity = listCommunitiesResponse.Communities.First();
+        Assert.That(firstCommunity, Is.Not.Null);
+
+        var getCommunityForm = new GetCommunityForm { Id = firstCommunity.Community.Id };
+        var getCommunityResponse = await _client!.GetCommunity(getCommunityForm);
+        var secondCommunity = getCommunityResponse.CommunityView;
+        
+        Assert.That(IJsonObject.EqualsByJson(firstCommunity, secondCommunity), Is.True);
+    }
+
+    [Test]
+    public async Task GetPostsTest()
+    {
+        Assert.That(_client, Is.Not.Null);
+
+        var getPostsForm = new GetPostsForm { CommunityId = 15 };
+        var getPostsResponse = await _client!.GetPosts(getPostsForm);
+        
+        Assert.That(getPostsResponse.Posts, Has.Length);
+        
+        Debug.WriteLine(getPostsResponse.Posts.First());
     }
 }

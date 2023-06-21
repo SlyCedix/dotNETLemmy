@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class ModFeaturePost
+public class ModFeaturePost : IJsonObject
 {
     [JsonProperty] public bool Featured { get; private set; }
     [JsonProperty] public int Id { get; private set; }

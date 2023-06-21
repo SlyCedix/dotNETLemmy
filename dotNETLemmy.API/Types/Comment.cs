@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class Comment
+public class Comment : IJsonObject
 {
     [JsonProperty] public string ApId { get; private set; } = string.Empty;
     [JsonProperty] public string Content { get; private set; } = string.Empty;

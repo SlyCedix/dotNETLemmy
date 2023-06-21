@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
-public class CommunitySafe
+public class CommunitySafe : IJsonObject
 {
     [JsonProperty] public string ActorId { get; private set; } = string.Empty;
     [JsonProperty] public string? Banner { get; private set; }
