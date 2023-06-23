@@ -14,21 +14,21 @@ public class Tests
     
     private string? _jwt;
     
-    private readonly string? _username = Environment.GetEnvironmentVariable("LEMMY_USER");
-    private readonly string? _password = Environment.GetEnvironmentVariable("LEMMY_PASS");
-    private readonly string? _lemmyurl = Environment.GetEnvironmentVariable("LEMMY_URL");
+    private readonly string _username = Environment.GetEnvironmentVariable("LEMMY_USER") ?? "";
+    private readonly string _password = Environment.GetEnvironmentVariable("LEMMY_PASS") ?? "";
+    private readonly string _lemmyurl = Environment.GetEnvironmentVariable("LEMMY_URL") ?? "";
     
     [OneTimeSetUp]
     public void Init()
     {
         Assert.Multiple(() =>
         {
-            Assert.That(_username, Is.Not.Null);
-            Assert.That(_password, Is.Not.Null);
-            Assert.That(_lemmyurl, Is.Not.Null);
+            Assert.That(_username, Is.Not.Empty);
+            Assert.That(_password, Is.Not.Empty);
+            Assert.That(_lemmyurl, Is.Not.Empty);
         });
         
-        _client = new LemmyHttpClient(new Uri(_lemmyurl!));
+        _client = new LemmyHttpClient(new Uri(_lemmyurl));
     }
 
     [OneTimeTearDown]
