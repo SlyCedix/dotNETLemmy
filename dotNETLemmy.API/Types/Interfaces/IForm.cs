@@ -16,11 +16,20 @@ public interface IForm : IJsonObject
 
     public HttpRequestMessage ToRequest(Uri baseUri)
     {
-        var requestUri = new Uri(baseUri, RequestUri + Json.JsonToQuery());
+        var requestUri = RequestUri;
+        if (Method == HttpMethod.Get ||
+            Method == HttpMethod.Head)
+            requestUri += Json.JsonToQuery();
 
-        return new HttpRequestMessage
+        var req = new HttpRequestMessage
         {
-            RequestUri = requestUri, Method = Method
+            RequestUri = new Uri(baseUri, requestUri), Method = Method
         };
+
+        if (Method != HttpMethod.Get &&
+            Method != HttpMethod.Head)
+            req.Content = new StringContent(Json, Encoding.UTF8, "application/json");
+
+        return req;
     }
 }
