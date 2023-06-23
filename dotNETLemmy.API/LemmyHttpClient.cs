@@ -52,7 +52,6 @@ public class LemmyHttpClient : IDisposable
     {
         var req = form.ToRequest(Client.BaseAddress!);
         var res = await Client.SendAsync(req, cancellationToken);
-        Console.WriteLine(res);
         return await Response.FromHttpResponseMessage<TResponse>(res);
     }
 
