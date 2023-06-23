@@ -1,5 +1,0 @@
-﻿{
-  "username": "${TEST_USER}",
-  "password": "${TEST_PASS}",
-  "instanceUrl": "https://enterprise.lemmy.ml"
-}

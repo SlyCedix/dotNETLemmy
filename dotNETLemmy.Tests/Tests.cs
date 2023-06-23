@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using System.Text.Json;
 using dotNETLemmy.API;
 using dotNETLemmy.API.Types;
@@ -9,27 +10,25 @@ namespace dotNETLemmy.Tests;
 [TestFixture]
 public class Tests
 {
-    private Dictionary<string, string> _testConfig = null!;
     private LemmyHttpClient? _client;
+    
     private string? _jwt;
-
+    
+    private readonly string? _username = Environment.GetEnvironmentVariable("LEMMY_USER");
+    private readonly string? _password = Environment.GetEnvironmentVariable("LEMMY_PASS");
+    private readonly string? _lemmyurl = Environment.GetEnvironmentVariable("LEMMY_URL");
+    
     [OneTimeSetUp]
     public void Init()
     {
-        var json = File.ReadAllText("config.json");
-        var testConfig = JsonSerializer.Deserialize<Dictionary<string, string>>(json);
-        
-        Assert.That(testConfig, Is.Not.Null);
-        _testConfig = testConfig!;
-        
         Assert.Multiple(() =>
         {
-            Assert.That(_testConfig["instance_url"], Is.Not.Null);
-            Assert.That(_testConfig["username"], Is.Not.Null);
-            Assert.That(_testConfig["password"], Is.Not.Null);
+            Assert.That(_username, Is.Not.Null);
+            Assert.That(_password, Is.Not.Null);
+            Assert.That(_lemmyurl, Is.Not.Null);
         });
         
-        _client = new LemmyHttpClient(new Uri(_testConfig!["instance_url"]));
+        _client = new LemmyHttpClient(new Uri(_lemmyurl!));
     }
 
     [OneTimeTearDown]
@@ -48,7 +47,7 @@ public class Tests
         
         var loginForm = new LoginForm
         {
-            UsernameOrEmail = _testConfig["username"], Password = _testConfig["password"]
+            UsernameOrEmail = _username, Password = _password
         };
         
         var loginResponse = await _client!.Login(loginForm);
