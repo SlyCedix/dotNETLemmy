@@ -50,7 +50,7 @@ jobs:
         uses: actions/setup-dotnet@v3
 
       - name: Test
-        run: dotnet test --configuration Release --no-build
+        run: dotnet test --configuration Release
         env:
           LEMMY_USER: ${{ secrets.LEMMY_USERNAME }}
           LEMMY_PASS: ${{ secrets.LEMMY_PASSWORD }}
