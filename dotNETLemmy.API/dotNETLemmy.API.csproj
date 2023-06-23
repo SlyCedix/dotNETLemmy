@@ -4,8 +4,7 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>0.0.1</Version>
+        <Deterministic>false</Deterministic>
         <Title>Lemmy .NET Api</Title>
         <Description>HTTP API wrapper for Lemmy</Description>
         <Copyright>2023 SlyCedix</Copyright>
@@ -17,9 +16,14 @@
         <PackageTags>lemmy</PackageTags>
         <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
         <PackageReadmeFile>README.md</PackageReadmeFile>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     </PropertyGroup>
-
+    
     <ItemGroup>
+        <PackageReference Include="MinVer" Version="5.0.0-alpha.1">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     </ItemGroup>
 
