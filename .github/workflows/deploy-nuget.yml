@@ -48,25 +48,13 @@ jobs:
         
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
-        
-      - run: ls
-        
-      - name: Setup config.json username
-        uses: jossef/action-set-json-field@v2.1
-        with:
-          file: dotNETLemmy.Tests/config.json
-          field: username
-          value: ${{ secrets.LEMMY_USERNAME }}
-          
-      - name: Setup config.json username
-        uses: jossef/action-set-json-field@v2.1
-        with:
-          file: dotNETLemmy.Tests/config.json
-          field: password
-          value: ${{ secrets.LEMMY_PASSWORD }}
-          
+
       - name: Test
         run: dotnet test --configuration Release --no-build
+        env:
+          LEMMY_USER: ${{ secrets.LEMMY_USERNAME }}
+          LEMMY_PASS: ${{ secrets.LEMMY_PASSWORD }}
+          LEMMY_URL: ${{ secrets.LEMMY_URL }}
         
         
   validate_package:
