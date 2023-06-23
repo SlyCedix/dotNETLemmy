@@ -24,12 +24,12 @@ public class Tests
         
         Assert.Multiple(() =>
         {
-            Assert.That(_testConfig!["instanceUrl"], Is.Not.Null);
-            Assert.That(_testConfig!["username"], Is.Not.Null);
-            Assert.That(_testConfig!["password"], Is.Not.Null);
+            Assert.That(_testConfig["instance_url"], Is.Not.Null);
+            Assert.That(_testConfig["username"], Is.Not.Null);
+            Assert.That(_testConfig["password"], Is.Not.Null);
         });
         
-        _client = new LemmyHttpClient(new Uri(_testConfig!["instanceUrl"]));
+        _client = new LemmyHttpClient(new Uri(_testConfig!["instance_url"]));
     }
 
     [OneTimeTearDown]
@@ -64,28 +64,51 @@ public class Tests
         Assert.That(_client, Is.Not.Null);
         
         var listCommunitiesResponse = await _client!.ListCommunities(new ListCommunitiesForm());
-        Assert.That(listCommunitiesResponse.Communities, Has.Length);
-
+        Assert.Multiple(() =>
+        {
+            Assert.That(listCommunitiesResponse.HasError, Is.False);
+            Assert.That(listCommunitiesResponse.IsSuccessStatusCode, Is.True);
+            Assert.That(listCommunitiesResponse.Communities, Has.Length);
+        });
+        
         var firstCommunity = listCommunitiesResponse.Communities.First();
         Assert.That(firstCommunity, Is.Not.Null);
 
         var getCommunityForm = new GetCommunityForm { Id = firstCommunity.Community.Id };
         var getCommunityResponse = await _client!.GetCommunity(getCommunityForm);
-        var secondCommunity = getCommunityResponse.CommunityView;
-        
-        Assert.That(IJsonObject.EqualsByJson(firstCommunity, secondCommunity), Is.True);
+        Assert.Multiple(() =>
+        {
+            Assert.That(getCommunityResponse.HasError, Is.False);
+            Assert.That(getCommunityResponse.IsSuccessStatusCode, Is.True);
+            Assert.That( getCommunityResponse.CommunityView, Is.Not.Null);
+            Assert.That(IJsonObject.EqualsByJson(firstCommunity, getCommunityResponse.CommunityView), Is.True);
+        });
     }
 
     [Test]
     public async Task GetPostsTest()
     {
         Assert.That(_client, Is.Not.Null);
+        
+        var getPostsResponse = await _client!.GetPosts(new GetPostsForm());
+        Assert.Multiple(() =>
+        {
+            Assert.That(getPostsResponse.HasError, Is.False);
+            Assert.That(getPostsResponse.IsSuccessStatusCode, Is.True);
+            Assert.That(getPostsResponse.Posts, Has.Length);
+        });
+        
+        var firstPost = getPostsResponse.Posts.First();
+        Assert.That(firstPost, Is.Not.Null);
 
-        var getPostsForm = new GetPostsForm { CommunityId = 15 };
-        var getPostsResponse = await _client!.GetPosts(getPostsForm);
-        
-        Assert.That(getPostsResponse.Posts, Has.Length);
-        
-        Debug.WriteLine(getPostsResponse.Posts.First());
+        var getPostForm = new GetPostForm { Id = firstPost.Post.Id };
+        var getPostResponse = await _client!.GetPost(getPostForm);
+        Assert.Multiple(() =>
+        {
+            Assert.That(getPostResponse.HasError, Is.False);
+            Assert.That(getPostResponse.IsSuccessStatusCode, Is.True);
+            Assert.That(getPostResponse.PostView, Is.Not.Null);
+            Assert.That(IJsonObject.EqualsByJson(firstPost, getPostResponse.PostView), Is.True);
+        });
     }
 }
