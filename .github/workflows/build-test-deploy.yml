@@ -45,11 +45,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
         
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
+        
+      - run: ls
         
       - name: Setup config.json username
         uses: jossef/action-set-json-field@v2.1
