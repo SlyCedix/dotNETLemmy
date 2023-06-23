@@ -54,7 +54,7 @@ jobs:
       - name: Setup config.json username
         uses: jossef/action-set-json-field@v2.1
         with:
-          file: dotNETLemmy.Docs/config.json
+          file: dotNETLemmy.Tests/config.json
           field: username
           value: ${{ secrets.LEMMY_USERNAME }}
           
