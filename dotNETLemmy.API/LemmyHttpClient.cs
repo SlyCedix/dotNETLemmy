@@ -9,31 +9,20 @@ namespace dotNETLemmy.API;
 ///     Helps build Lemmy HTTP Requests.
 /// </summary>
 /// <seealso cref="IDisposable" />
-public class LemmyHttpClient : IDisposable
+public class LemmyHttpClient
 {
-    private bool _disposed; // = false
-
+    private HttpClient Client { get; }
+    
     /// <summary>
     ///     Initializes a new instance of the <see cref="LemmyHttpClient" /> class
+    ///     <para>
+    ///         Intended to be used as an <see cref="IHttpClientFactory"/> typed client
+    ///     </para>
     /// </summary>
-    /// <param name="baseUri">Base uri to the lemmy instance</param>
-    public LemmyHttpClient(Uri baseUri)
+    /// <param name="client">Base uri to the lemmy instance</param>
+    public LemmyHttpClient(HttpClient client)
     {
-        Client = new HttpClient
-        {
-            BaseAddress = baseUri
-        };
-    }
-
-    private HttpClient Client { get; }
-
-    /// <summary>
-    ///     Disposes this instance
-    /// </summary>
-    public void Dispose()
-    {
-        Dispose(true);
-        GC.SuppressFinalize(this);
+        Client = client;
     }
 
     /// <summary>
@@ -920,14 +909,4 @@ public class LemmyHttpClient : IDisposable
     /// </returns>
     public Task<VerifyEmailResponse> VerifyEmail(VerifyEmailForm form, CancellationToken cancellationToken = default) =>
         SendAsync<VerifyEmailResponse>(form, cancellationToken);
-    
-    private void Dispose(bool disposing)
-    {
-        if (_disposed) return;
-        if (disposing)
-            Client.Dispose();
-        _disposed = true;
-    }
-
-    ~LemmyHttpClient() { Dispose(false); }
 }

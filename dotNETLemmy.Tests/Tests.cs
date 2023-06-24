@@ -1,6 +1,6 @@
-using System.Diagnostics;
-using System.Diagnostics.CodeAnalysis;
-using System.Text.Json;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+
 using dotNETLemmy.API;
 using dotNETLemmy.API.Types;
 using dotNETLemmy.API.Types.Forms;
@@ -10,7 +10,7 @@ namespace dotNETLemmy.Tests;
 [TestFixture]
 public class Tests
 {
-    private LemmyHttpClient? _client;
+    private IHost? _host;
     
     private string? _jwt;
     
@@ -27,14 +27,18 @@ public class Tests
             Assert.That(_password, Is.Not.Empty);
             Assert.That(_lemmyurl, Is.Not.Empty);
         });
-        
-        _client = new LemmyHttpClient(new Uri(_lemmyurl));
-    }
 
-    [OneTimeTearDown]
-    public void Cleanup()
-    {
-        _client?.Dispose();
+        var builder = Host.CreateDefaultBuilder()
+            .ConfigureServices(services =>
+            {
+                services.AddHttpClient<LemmyHttpClient>()
+                    .ConfigureHttpClient(client =>
+                    {
+                        client.BaseAddress = new Uri(_lemmyurl);
+                    });
+            });
+
+        _host = builder.Build();
     }
 
     /// <summary>
@@ -43,14 +47,16 @@ public class Tests
     [Test, Order(1)]
     public async Task LoginTest()
     {
-        Assert.That(_client, Is.Not.Null);
+        Assert.That(_host, Is.Not.Null);
+        var client = _host!.Services.GetService<LemmyHttpClient>();
+        Assert.That(client, Is.Not.Null);
         
         var loginForm = new LoginForm
         {
             UsernameOrEmail = _username, Password = _password
         };
         
-        var loginResponse = await _client!.Login(loginForm);
+        var loginResponse = await client!.Login(loginForm);
 
         Assert.That(loginResponse.Jwt, Is.Not.Null);
 
@@ -60,9 +66,11 @@ public class Tests
     [Test]
     public async Task CommunitiesTest()
     {
-        Assert.That(_client, Is.Not.Null);
+        Assert.That(_host, Is.Not.Null);
+        var client = _host!.Services.GetService<LemmyHttpClient>();
+        Assert.That(client, Is.Not.Null);
         
-        var listCommunitiesResponse = await _client!.ListCommunities(new ListCommunitiesForm());
+        var listCommunitiesResponse = await client!.ListCommunities(new ListCommunitiesForm());
         Assert.Multiple(() =>
         {
             Assert.That(listCommunitiesResponse.HasError, Is.False);
@@ -74,7 +82,7 @@ public class Tests
         Assert.That(firstCommunity, Is.Not.Null);
 
         var getCommunityForm = new GetCommunityForm { Id = firstCommunity.Community.Id };
-        var getCommunityResponse = await _client!.GetCommunity(getCommunityForm);
+        var getCommunityResponse = await client!.GetCommunity(getCommunityForm);
         Assert.Multiple(() =>
         {
             Assert.That(getCommunityResponse.HasError, Is.False);
@@ -87,9 +95,11 @@ public class Tests
     [Test]
     public async Task GetPostsTest()
     {
-        Assert.That(_client, Is.Not.Null);
+        Assert.That(_host, Is.Not.Null);
+        var client = _host!.Services.GetService<LemmyHttpClient>();
+        Assert.That(client, Is.Not.Null);
         
-        var getPostsResponse = await _client!.GetPosts(new GetPostsForm());
+        var getPostsResponse = await client!.GetPosts(new GetPostsForm());
         Assert.Multiple(() =>
         {
             Assert.That(getPostsResponse.HasError, Is.False);
@@ -101,7 +111,7 @@ public class Tests
         Assert.That(firstPost, Is.Not.Null);
 
         var getPostForm = new GetPostForm { Id = firstPost.Post.Id };
-        var getPostResponse = await _client!.GetPost(getPostForm);
+        var getPostResponse = await client!.GetPost(getPostForm);
         Assert.Multiple(() =>
         {
             Assert.That(getPostResponse.HasError, Is.False);
