@@ -59,7 +59,7 @@ jobs:
           LEMMY_URL: ${{ secrets.LEMMY_URL }}
         
   deploy_package:
-    if: github.event_name == 'release'
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     needs: [ create_package, test_package ]
     steps:
