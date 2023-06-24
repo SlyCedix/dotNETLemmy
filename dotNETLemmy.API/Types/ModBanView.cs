@@ -1,10 +1,10 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types;
 
 public class ModBanView : IJsonObject
 {
-    [JsonProperty] public PersonSafe BannedPerson { get; private set; } = null!;
-    [JsonProperty] public ModBan ModBan { get; private set; } = null!;
-    [JsonProperty] public PersonSafe? Moderator { get; private set; }
+    [JsonInclude] public PersonSafe BannedPerson { get; private set; } = null!;
+    [JsonInclude] public ModBan ModBan { get; private set; } = null!;
+    [JsonInclude] public PersonSafe? Moderator { get; private set; }
 }

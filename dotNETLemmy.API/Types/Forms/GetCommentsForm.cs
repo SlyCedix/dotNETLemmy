@@ -1,6 +1,5 @@
+using System.Text.Json.Serialization;
 using dotNETLemmy.API.Types.Enums;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 
 namespace dotNETLemmy.API.Types.Forms;
 
@@ -15,12 +14,9 @@ public class GetCommentsForm : IForm
     public int? ParentId { get; set; }
     public int? PostId { get; set; }
     public int? SavedOnly { get; set; }
-
-    [JsonConverter(typeof(StringEnumConverter))]
     public CommentSortType? Sort { get; set; }
 
-    [JsonConverter(typeof(StringEnumConverter))]
-    [JsonProperty(PropertyName = "type_")]
+    [JsonPropertyName("type_")]
     public ListingType Type { get; set; }
 
     public string EndPoint => "/api/v3/comment/list";

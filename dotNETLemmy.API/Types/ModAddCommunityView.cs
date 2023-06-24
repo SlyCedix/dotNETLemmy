@@ -1,11 +1,11 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types;
 
 public class ModAddCommunityView : IJsonObject
 {
-    [JsonProperty] public CommunitySafe Community { get; private set; } = null!;
-    [JsonProperty] public ModAddCommunity ModAddCommunity { get; private set; } = null!;
-    [JsonProperty] public PersonSafe ModdedPerson { get; private set; } = null!;
-    [JsonProperty] public PersonSafe? Moderator { get; private set; }
+    [JsonInclude] public CommunitySafe Community { get; private set; } = null!;
+    [JsonInclude] public ModAddCommunity ModAddCommunity { get; private set; } = null!;
+    [JsonInclude] public PersonSafe ModdedPerson { get; private set; } = null!;
+    [JsonInclude] public PersonSafe? Moderator { get; private set; }
 }

@@ -1,10 +1,10 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types;
 
 public class ModRemoveCommunityView : IJsonObject
 {
-    [JsonProperty] public CommunitySafe Community { get; private set; } = null!;
-    [JsonProperty] public ModRemoveCommunity ModRemoveCommunity { get; private set; } = null!;
-    [JsonProperty] public PersonSafe? Moderator { get; private set; }
+    [JsonInclude] public CommunitySafe Community { get; private set; } = null!;
+    [JsonInclude] public ModRemoveCommunity ModRemoveCommunity { get; private set; } = null!;
+    [JsonInclude] public PersonSafe? Moderator { get; private set; }
 }

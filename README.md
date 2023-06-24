@@ -5,9 +5,15 @@
 An implementation of the Lemmy HTTP API modeled after [lemmy-js-client](https://github.com/LemmyNet/lemmy-js-client).
 
 ## Usage
-The [LemmyHttpClient](xref:dotNETLemmy.API.LemmyHttpClient) class has a constructor which takes an [HttpClient](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-7.0) as a parameter, allowing for it to be used as a typed [IHttpClientFactory](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-7.0) client with dependency injection.
+
+The [LemmyHttpClient](xref:dotNETLemmy.API.LemmyHttpClient) class has a constructor which takes
+an [HttpClient](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-7.0) as a parameter,
+allowing for it to be used as a
+typed [IHttpClientFactory](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-7.0)
+client with dependency injection.
 
 `Program.cs:`
+
 ```csharp
 HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
@@ -24,6 +30,7 @@ host.Run();
 ```
 
 `LemmyWorker.cs:`
+
 ```csharp
 // Logs getPostResponse every 10 seconds
 public class LemmyWorker : BackgroundService

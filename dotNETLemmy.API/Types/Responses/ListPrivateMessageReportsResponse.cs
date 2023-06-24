@@ -1,8 +1,8 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types.Responses;
 
 public class ListPrivateMessageReportsResponse : Response
 {
-    [JsonProperty] public PrivateMessageReportView[] PrivateMessageReports { get; private set; } = null!;
+    [JsonInclude] public PrivateMessageReportView[] PrivateMessageReports { get; private set; } = null!;
 }

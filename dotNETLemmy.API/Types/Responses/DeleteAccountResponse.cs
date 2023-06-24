@@ -1,8 +1,8 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types.Responses;
 
 public class DeleteAccountResponse : Response
 {
-    [JsonProperty] public PersonViewSafe[] Banned { get; private set; } = null!;
+    [JsonInclude] public PersonViewSafe[] Banned { get; private set; } = null!;
 }

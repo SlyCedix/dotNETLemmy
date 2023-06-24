@@ -1,8 +1,8 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types.Responses;
 
 public class ListPostReportsResponse : Response
 {
-    [JsonProperty] public PostReportView[] PostReports { get; private set; } = null!;
+    [JsonInclude] public PostReportView[] PostReports { get; private set; } = null!;
 }

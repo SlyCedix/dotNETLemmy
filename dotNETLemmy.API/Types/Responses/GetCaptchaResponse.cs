@@ -1,8 +1,8 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types.Responses;
 
 public class GetCaptchaResponse : Response
 {
-    [JsonProperty] public CaptchaResponse? Ok { get; private set; }
+    [JsonInclude] public CaptchaResponse? Ok { get; private set; }
 }

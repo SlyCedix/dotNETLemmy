@@ -1,6 +1,4 @@
 using dotNETLemmy.API.Types.Enums;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 
 namespace dotNETLemmy.API.Types.Forms;
 
@@ -42,10 +40,7 @@ public class CreateSiteForm : IForm
     public int? RateLimitRegisterPerSecond { get; set; }
     public int? RateLimitSearch { get; set; }
     public int? RateLimitSearchPerSecond { get; set; }
-
-    [JsonConverter(typeof(StringEnumConverter))]
     public RegistrationMode? RegistrationMode { get; set; }
-
     public bool? ReportsEmailAdmins { get; set; }
     public string? Sidebar { get; set; }
     public string? SlurFilterRegex { get; set; }

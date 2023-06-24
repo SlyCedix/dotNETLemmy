@@ -1,17 +1,17 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types;
 
 public class PostAggregates : IJsonObject
 {
-    [JsonProperty] public int Comments { get; private set; }
-    [JsonProperty] public int Downvotes { get; private set; }
-    [JsonProperty] public bool FeaturedCommunity { get; private set; }
-    [JsonProperty] public bool FeaturedLocal { get; private set; }
-    [JsonProperty] public int Id { get; private set; }
-    [JsonProperty] public string NewestCommentTime { get; private set; } = string.Empty;
-    [JsonProperty] public string NewestCommentTimeNecro { get; private set; } = string.Empty;
-    [JsonProperty] public int PostId { get; private set; }
-    [JsonProperty] public int Score { get; private set; }
-    [JsonProperty] public int Upvotes { get; private set; }
+    [JsonInclude] public int Comments { get; private set; }
+    [JsonInclude] public int Downvotes { get; private set; }
+    [JsonInclude] public bool FeaturedCommunity { get; private set; }
+    [JsonInclude] public bool FeaturedLocal { get; private set; }
+    [JsonInclude] public int Id { get; private set; }
+    [JsonInclude] public string NewestCommentTime { get; private set; } = string.Empty;
+    [JsonInclude] public string NewestCommentTimeNecro { get; private set; } = string.Empty;
+    [JsonInclude] public int PostId { get; private set; }
+    [JsonInclude] public int Score { get; private set; }
+    [JsonInclude] public int Upvotes { get; private set; }
 }

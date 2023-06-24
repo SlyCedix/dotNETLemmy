@@ -1,8 +1,8 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types.Responses;
 
 public class GetUnreadRegistrationApplicationCountResponse : Response
 {
-    [JsonProperty] public int RegistrationApplications { get; private set; }
+    [JsonInclude] public int RegistrationApplications { get; private set; }
 }

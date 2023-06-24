@@ -1,20 +1,20 @@
+using System.Text.Json.Serialization;
 using dotNETLemmy.API.Types.Enums;
-using Newtonsoft.Json;
 
 namespace dotNETLemmy.API.Types;
 
 public class PersonMentionView : IJsonObject
 {
-    [JsonProperty] public Comment Comment { get; private set; } = null!;
-    [JsonProperty] public CommunitySafe Community { get; private set; } = null!;
-    [JsonProperty] public CommentAggregates Counts { get; private set; } = null!;
-    [JsonProperty] public PersonSafe Creator { get; private set; } = null!;
-    [JsonProperty] public bool CreatorBannedFromCommunity { get; private set; }
-    [JsonProperty] public bool CreatorBlocked { get; private set; }
-    [JsonProperty] public int? MyVote { get; private set; }
-    [JsonProperty] public PersonMention PersonMention { get; private set; } = null!;
-    [JsonProperty] public Post Post { get; private set; } = null!;
-    [JsonProperty] public PersonSafe Recipient { get; private set; } = null!;
-    [JsonProperty] public bool Saved { get; private set; }
-    [JsonProperty] public SubscribedType Subscribed { get; private set; }
+    [JsonInclude] public Comment Comment { get; private set; } = null!;
+    [JsonInclude] public CommunitySafe Community { get; private set; } = null!;
+    [JsonInclude] public CommentAggregates Counts { get; private set; } = null!;
+    [JsonInclude] public PersonSafe Creator { get; private set; } = null!;
+    [JsonInclude] public bool CreatorBannedFromCommunity { get; private set; }
+    [JsonInclude] public bool CreatorBlocked { get; private set; }
+    [JsonInclude] public int? MyVote { get; private set; }
+    [JsonInclude] public PersonMention PersonMention { get; private set; } = null!;
+    [JsonInclude] public Post Post { get; private set; } = null!;
+    [JsonInclude] public PersonSafe Recipient { get; private set; } = null!;
+    [JsonInclude] public bool Saved { get; private set; }
+    [JsonInclude] public SubscribedType Subscribed { get; private set; }
 }

@@ -1,19 +1,30 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
+﻿using System.Text.Json;
+using System.Text.Json.Serialization;
+using dotNETLemmy.API.Extensions;
 
 namespace dotNETLemmy.API;
 
 internal class SerializationUtils
 {
-    private static JsonSerializerSettings SerializerSettings { get; } = new()
+    private static JsonSerializerOptions SerializerOptions { get; } = new()
     {
-        ContractResolver = new DefaultContractResolver
+        PropertyNamingPolicy = SnakeCaseNamingPolicy.Instance,
+        DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
+        WriteIndented = false,
+        IgnoreReadOnlyProperties = true,
+        Converters =
         {
-            NamingStrategy = new SnakeCaseNamingStrategy()
-        },
-        NullValueHandling = NullValueHandling.Ignore
+            new JsonStringEnumConverter()
+        }
     };
 
-    public static string Serialize(object? value) => JsonConvert.SerializeObject(value, SerializerSettings);
-    public static T? Deserialize<T>(string value) => JsonConvert.DeserializeObject<T>(value, SerializerSettings);
+    public static string Serialize(object? value) => JsonSerializer.Serialize(value, SerializerOptions);
+    public static T? Deserialize<T>(string value) => JsonSerializer.Deserialize<T>(value, SerializerOptions);
+
+    private class SnakeCaseNamingPolicy : JsonNamingPolicy
+    {
+        public static readonly SnakeCaseNamingPolicy Instance = new();
+
+        public override string ConvertName(string name) => name.ToSnakeCase();
+    }
 }

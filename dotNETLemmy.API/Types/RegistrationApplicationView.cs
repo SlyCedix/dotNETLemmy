@@ -1,11 +1,11 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types;
 
 public class RegistrationApplicationView : IJsonObject
 {
-    [JsonProperty] public PersonSafe? Admin { get; private set; }
-    [JsonProperty] public PersonSafe Creator { get; private set; } = null!;
-    [JsonProperty] public LocalUserSettings CreatorLocalUser { get; private set; } = null!;
-    [JsonProperty] public RegistrationApplication RegistrationApplication { get; private set; } = null!;
+    [JsonInclude] public PersonSafe? Admin { get; private set; }
+    [JsonInclude] public PersonSafe Creator { get; private set; } = null!;
+    [JsonInclude] public LocalUserSettings CreatorLocalUser { get; private set; } = null!;
+    [JsonInclude] public RegistrationApplication RegistrationApplication { get; private set; } = null!;
 }

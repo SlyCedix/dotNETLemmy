@@ -1,8 +1,8 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types.Responses;
 
 public class ApproveRegistrationApplicationResponse : Response
 {
-    [JsonProperty] public RegistrationApplicationView RegistrationApplication { get; private set; } = null!;
+    [JsonInclude] public RegistrationApplicationView RegistrationApplication { get; private set; } = null!;
 }

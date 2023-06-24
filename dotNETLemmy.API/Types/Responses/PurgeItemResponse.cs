@@ -1,8 +1,8 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types.Responses;
 
 public class PurgeItemResponse : Response
 {
-    [JsonProperty] public bool Success { get; private set; }
+    [JsonInclude] public bool Success { get; private set; }
 }

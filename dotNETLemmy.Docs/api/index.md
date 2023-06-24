@@ -6,14 +6,14 @@ If a Lemmy instance supports a non standard API call the following steps can be 
 
 Create a Form that implements [IForm](xref:dotNETLemmy.API.Types.IForm) (see examples [here](xref:dotNETLemmy.API.Types.Forms)):
 ```csharp
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 public class NonstandardForm : IForm
 {
     public bool ExampleBool { get; set; } // serialized as example_bool
     public string? ExampleString { get; set; } // serialized as example_string only when defined
     
-    [JsonProperty(PropertyName = "NonStandardExample")]
+    [JsonPropertyName("NonStandardExample")]
     public int ExampleInt { get; set; } // serialized as NonStandardExample
     
     public string EndPoint => "/api/v3/nonstandard/api/endpoint"
@@ -23,13 +23,13 @@ public class NonstandardForm : IForm
 
 Create a Response class that inherits from [Response](xref:dotNETLemmy.API.Types.Responses.Response):
 ```csharp
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 public class NonstandardResponse : Response
 {
-    [JsonProperty] public string ExampleString { get; private set; } = string.Empty; // deserialized from example_string
+    [JsonInclude] public string ExampleString { get; private set; } = string.Empty; // deserialized from example_string
     
-    [JsonProperty(PropertyName = "non_standard_example_")] 
+    [JsonPropertyName("non_standard_example_")] 
     public int ExampleInt { get; private set; } // deserialized from non_standard_example_
 }
 ```

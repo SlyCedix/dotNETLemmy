@@ -1,8 +1,8 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types.Responses;
 
 public class GetPersonMentionsResponse : Response
 {
-    [JsonProperty] public PersonMentionView[] Mentions { get; private set; } = null!;
+    [JsonInclude] public PersonMentionView[] Mentions { get; private set; } = null!;
 }
