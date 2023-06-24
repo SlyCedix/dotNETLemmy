@@ -1,16 +1,16 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types.Responses;
 
 public class GetSiteResponse : Response
 {
-    [JsonProperty] public PersonViewSafe[] Admins { get; private set; } = null!;
-    [JsonProperty] public Language[] AllLanguages { get; private set; } = null!;
-    [JsonProperty] public int[] DiscussionLanguages { get; private set; } = null!;
-    [JsonProperty] public FederatedInstances? FederatedInstances { get; private set; }
-    [JsonProperty] public MyUserInfo? MyUser { get; private set; }
-    [JsonProperty] public int Online { get; private set; }
-    [JsonProperty] public SiteView SiteView { get; private set; } = null!;
-    [JsonProperty] public Tagline[] Taglines { get; private set; } = null!;
-    [JsonProperty] public string Version { get; private set; } = string.Empty;
+    [JsonInclude] public PersonViewSafe[] Admins { get; private set; } = null!;
+    [JsonInclude] public Language[] AllLanguages { get; private set; } = null!;
+    [JsonInclude] public int[] DiscussionLanguages { get; private set; } = null!;
+    [JsonInclude] public FederatedInstances? FederatedInstances { get; private set; }
+    [JsonInclude] public MyUserInfo? MyUser { get; private set; }
+    [JsonInclude] public int Online { get; private set; }
+    [JsonInclude] public SiteView SiteView { get; private set; } = null!;
+    [JsonInclude] public Tagline[] Taglines { get; private set; } = null!;
+    [JsonInclude] public string Version { get; private set; } = string.Empty;
 }

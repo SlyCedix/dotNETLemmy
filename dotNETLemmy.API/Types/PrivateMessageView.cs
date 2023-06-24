@@ -1,10 +1,10 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types;
 
 public class PrivateMessageView : IJsonObject
 {
-    [JsonProperty] public PersonSafe Creator { get; private set; } = null!;
-    [JsonProperty] public PrivateMessage PrivateMessage { get; private set; } = null!;
-    [JsonProperty] public PersonSafe Recipient { get; private set; } = null!;
+    [JsonInclude] public PersonSafe Creator { get; private set; } = null!;
+    [JsonInclude] public PrivateMessage PrivateMessage { get; private set; } = null!;
+    [JsonInclude] public PersonSafe Recipient { get; private set; } = null!;
 }

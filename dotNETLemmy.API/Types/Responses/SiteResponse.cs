@@ -1,8 +1,8 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types.Responses;
 
 public class SiteResponse : Response
 {
-    [JsonProperty] public SiteView SiteView { get; private set; } = null!;
+    [JsonInclude] public SiteView SiteView { get; private set; } = null!;
 }

@@ -1,11 +1,11 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types.Responses;
 
 public class ResolveObjectResponse : Response
 {
-    [JsonProperty] public CommentView? Comment { get; private set; }
-    [JsonProperty] public CommunityView? Community { get; private set; }
-    [JsonProperty] public PersonViewSafe? Person { get; private set; }
-    [JsonProperty] public PostView? Post { get; private set; }
+    [JsonInclude] public CommentView? Comment { get; private set; }
+    [JsonInclude] public CommunityView? Community { get; private set; }
+    [JsonInclude] public PersonViewSafe? Person { get; private set; }
+    [JsonInclude] public PostView? Post { get; private set; }
 }

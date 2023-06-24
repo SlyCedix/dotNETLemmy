@@ -1,18 +1,17 @@
 using System.Net;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types.Responses;
 
-public abstract class Response  : IJsonObject
+public abstract class Response : IJsonObject
 {
     public HttpStatusCode StatusCode { get; private set; }
     public bool IsSuccessStatusCode { get; private set; }
     public string? ReasonPhrase { get; private set; }
-    
-    [JsonProperty] public string? Error { get; private set; }
+
+    [JsonInclude] public string? Error { get; private set; }
     public bool HasError => Error is not null;
-    
+
     public static async Task<TResponse> FromHttpResponseMessage<TResponse>(HttpResponseMessage message)
         where TResponse : Response, new()
     {

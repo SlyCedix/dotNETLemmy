@@ -1,33 +1,33 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types;
 
 public class CommunityAggregates : IJsonObject
 {
-    [JsonProperty]
+    [JsonInclude]
     public int Comments { get; private set; }
 
-    [JsonProperty]
+    [JsonInclude]
     public int CommunityId { get; private set; }
 
-    [JsonProperty]
+    [JsonInclude]
     public int Id { get; private set; }
 
-    [JsonProperty]
+    [JsonInclude]
     public int Posts { get; private set; }
 
-    [JsonProperty]
+    [JsonInclude]
     public int Subscribers { get; private set; }
 
-    [JsonProperty]
+    [JsonInclude]
     public int UsersActiveDay { get; private set; }
 
-    [JsonProperty]
+    [JsonInclude]
     public int UsersActiveHalfYear { get; private set; }
 
-    [JsonProperty]
+    [JsonInclude]
     public int UsersActiveMonth { get; private set; }
 
-    [JsonProperty]
+    [JsonInclude]
     public int UsersActiveWeek { get; private set; }
 }

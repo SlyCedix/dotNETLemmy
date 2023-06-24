@@ -1,9 +1,9 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types;
 
 public class CommunityFollowerView : IJsonObject
 {
-    [JsonProperty] public CommunitySafe Community { get; private set; } = null!;
-    [JsonProperty] public PersonSafe Follower { get; private set; } = null!;
+    [JsonInclude] public CommunitySafe Community { get; private set; } = null!;
+    [JsonInclude] public PersonSafe Follower { get; private set; } = null!;
 }

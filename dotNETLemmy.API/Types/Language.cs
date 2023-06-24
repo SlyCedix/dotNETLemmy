@@ -1,10 +1,10 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types;
 
 public class Language : IJsonObject
 {
-    [JsonProperty] public string Code { get; private set; } = string.Empty;
-    [JsonProperty] public int Id { get; private set; }
-    [JsonProperty] public string Name { get; private set; } = string.Empty;
+    [JsonInclude] public string Code { get; private set; } = string.Empty;
+    [JsonInclude] public int Id { get; private set; }
+    [JsonInclude] public string Name { get; private set; } = string.Empty;
 }

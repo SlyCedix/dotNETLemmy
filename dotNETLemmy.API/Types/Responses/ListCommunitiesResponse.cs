@@ -1,8 +1,8 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types.Responses;
 
 public class ListCommunitiesResponse : Response
 {
-    [JsonProperty] public CommunityView[] Communities { get; private set; } = null!;
+    [JsonInclude] public CommunityView[] Communities { get; private set; } = null!;
 }

@@ -1,10 +1,10 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types;
 
 public class FederatedInstances : IJsonObject
 {
-    [JsonProperty] public string[]? Allowed { get; private set; }
-    [JsonProperty] public string[]? Blocked { get; private set; }
-    [JsonProperty] public string[] Linked { get; private set; } = null!;
+    [JsonInclude] public string[]? Allowed { get; private set; }
+    [JsonInclude] public string[]? Blocked { get; private set; }
+    [JsonInclude] public string[] Linked { get; private set; } = null!;
 }

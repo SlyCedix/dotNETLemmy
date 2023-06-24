@@ -1,9 +1,9 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types;
 
 public class AdminPurgePersonView : IJsonObject
 {
-    [JsonProperty] public PersonSafe Admin { get; private set; } = null!;
-    [JsonProperty] public AdminPurgePerson AdminPurgePerson { get; private set; } = null!;
+    [JsonInclude] public PersonSafe Admin { get; private set; } = null!;
+    [JsonInclude] public AdminPurgePerson AdminPurgePerson { get; private set; } = null!;
 }

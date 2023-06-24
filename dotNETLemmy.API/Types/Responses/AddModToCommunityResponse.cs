@@ -1,8 +1,8 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types.Responses;
 
 public class AddModToCommunityResponse : Response
 {
-    [JsonProperty] public CommunityModeratorView[] Moderators { get; private set; } = null!;
+    [JsonInclude] public CommunityModeratorView[] Moderators { get; private set; } = null!;
 }

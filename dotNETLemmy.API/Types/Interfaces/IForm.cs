@@ -1,23 +1,18 @@
-using System.Net.Mime;
-using System.Reflection;
 using System.Text;
 using dotNETLemmy.API.Extensions;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
 
 namespace dotNETLemmy.API.Types;
 
 public interface IForm : IJsonObject
 {
-    [JsonIgnore] public string EndPoint { get; }
-    [JsonIgnore] public HttpMethod Method { get; }
-    
+    public string EndPoint { get; }
+    public HttpMethod Method { get; }
+
     public HttpRequestMessage ToRequest(string baseUri)
     {
         var endPoint = EndPoint;
-        if ((Method == HttpMethod.Get ||
-            Method == HttpMethod.Head) &&
-            Json.Length > 0) 
+        if (Method == HttpMethod.Get ||
+            Method == HttpMethod.Head)
             endPoint += Json.JsonToQuery();
 
         var req = new HttpRequestMessage

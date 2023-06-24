@@ -1,9 +1,9 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types.Responses;
 
 public class BlockCommunityResponse : Response
 {
-    [JsonProperty] public bool Blocked { get; private set; }
-    [JsonProperty] public CommunityView CommunityView { get; private set; } = null!;
+    [JsonInclude] public bool Blocked { get; private set; }
+    [JsonInclude] public CommunityView CommunityView { get; private set; } = null!;
 }

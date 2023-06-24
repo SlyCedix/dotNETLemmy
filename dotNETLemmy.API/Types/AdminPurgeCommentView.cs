@@ -1,10 +1,10 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace dotNETLemmy.API.Types;
 
 public class AdminPurgeCommentView : IJsonObject
 {
-    [JsonProperty] public PersonSafe? Admin { get; private set; }
-    [JsonProperty] public AdminPurgeComment AdminPurgeComment { get; private set; } = null!;
-    [JsonProperty] public Post Post { get; private set; } = null!;
+    [JsonInclude] public PersonSafe? Admin { get; private set; }
+    [JsonInclude] public AdminPurgeComment AdminPurgeComment { get; private set; } = null!;
+    [JsonInclude] public Post Post { get; private set; } = null!;
 }
