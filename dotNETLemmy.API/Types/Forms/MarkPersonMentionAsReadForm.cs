@@ -6,6 +6,6 @@ public class MarkPersonMentionAsReadForm : IForm
     public int PersonMentionId { get; set; }
     public bool Read { get; set; }
 
-    public string EndPoint => "/user/mention/mark_as_read";
+    public string EndPoint => "/api/v3/user/mention/mark_as_read";
     public HttpMethod Method => HttpMethod.Post;
 }

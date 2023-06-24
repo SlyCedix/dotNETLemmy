@@ -24,6 +24,6 @@ public class SearchForm : IForm
     [JsonProperty(PropertyName = "type_")]
     public SearchType? Type { get; set; }
 
-    public string EndPoint => "/search";
+    public string EndPoint => "/api/v3/search";
     public HttpMethod Method => HttpMethod.Get;
 }

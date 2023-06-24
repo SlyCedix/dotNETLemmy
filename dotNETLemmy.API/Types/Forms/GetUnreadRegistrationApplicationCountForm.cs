@@ -4,6 +4,6 @@ public class GetUnreadRegistrationApplicationCountForm : IForm
 {
     public string Auth { get; set; } = string.Empty;
 
-    public string EndPoint => "/admin/registration_application/count";
+    public string EndPoint => "/api/v3/admin/registration_application/count";
     public HttpMethod Method => HttpMethod.Get;
 }

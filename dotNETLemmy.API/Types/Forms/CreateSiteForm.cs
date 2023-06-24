@@ -50,6 +50,6 @@ public class CreateSiteForm : IForm
     public string? Sidebar { get; set; }
     public string? SlurFilterRegex { get; set; }
     public string[]? Taglines { get; set; }
-    public string EndPoint => "/site";
+    public string EndPoint => "/api/v3/site";
     public HttpMethod Method => HttpMethod.Post;
 }

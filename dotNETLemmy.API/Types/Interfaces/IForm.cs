@@ -11,19 +11,18 @@ public interface IForm : IJsonObject
 {
     [JsonIgnore] public string EndPoint { get; }
     [JsonIgnore] public HttpMethod Method { get; }
-    [JsonIgnore] private string RequestUri => $"/api/v3/{EndPoint.TrimStart('/').TrimEnd('/')}";
     
-
-    public HttpRequestMessage ToRequest(Uri baseUri)
+    public HttpRequestMessage ToRequest(string baseUri)
     {
-        var requestUri = RequestUri;
-        if (Method == HttpMethod.Get ||
-            Method == HttpMethod.Head)
-            requestUri += Json.JsonToQuery();
+        var endPoint = EndPoint;
+        if ((Method == HttpMethod.Get ||
+            Method == HttpMethod.Head) &&
+            Json.Length > 0) 
+            endPoint += Json.JsonToQuery();
 
         var req = new HttpRequestMessage
         {
-            RequestUri = new Uri(baseUri, requestUri), Method = Method
+            RequestUri = new Uri(new Uri(baseUri), endPoint), Method = Method
         };
 
         if (Method != HttpMethod.Get &&

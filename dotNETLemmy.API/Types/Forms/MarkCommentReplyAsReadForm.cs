@@ -6,6 +6,6 @@ public class MarkCommentReplyAsReadForm : IForm
     public int CommentReplyId { get; set; }
     public bool Read { get; set; }
 
-    public string EndPoint => "/comment/mark_as_read";
+    public string EndPoint => "/api/v3/comment/mark_as_read";
     public HttpMethod Method => HttpMethod.Post;
 }

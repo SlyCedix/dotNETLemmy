@@ -8,6 +8,6 @@ public class CreateCommentForm : IForm
     public int? LanguageId { get; set; }
     public int? ParentId { get; set; }
     public int PostId { get; set; }
-    public string EndPoint => "/comment";
+    public string EndPoint => "/api/v3/comment";
     public HttpMethod Method => HttpMethod.Post;
 }

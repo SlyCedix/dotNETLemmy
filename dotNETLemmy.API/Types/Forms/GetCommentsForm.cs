@@ -23,6 +23,6 @@ public class GetCommentsForm : IForm
     [JsonProperty(PropertyName = "type_")]
     public ListingType Type { get; set; }
 
-    public string EndPoint => "/comment/list";
+    public string EndPoint => "/api/v3/comment/list";
     public HttpMethod Method => HttpMethod.Get;
 }

@@ -6,6 +6,6 @@ public class GetPostForm : IForm
     public int? CommentId { get; set; }
     public int? Id { get; set; }
 
-    public string EndPoint => "/post";
+    public string EndPoint => "/api/v3/post";
     public HttpMethod Method => HttpMethod.Get;
 }

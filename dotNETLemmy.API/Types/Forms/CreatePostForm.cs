@@ -10,6 +10,6 @@ public class CreatePostForm : IForm
     public string Name { get; set; } = string.Empty;
     public bool? Nsfw { get; set; }
     public string? Url { get; set; }
-    public string EndPoint => "/post";
+    public string EndPoint => "/api/v3/post";
     public HttpMethod Method => HttpMethod.Post;
 }

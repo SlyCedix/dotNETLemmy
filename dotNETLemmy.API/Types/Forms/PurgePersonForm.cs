@@ -6,6 +6,6 @@ public class PurgePersonForm : IForm
     public int PersonId { get; set; }
     public string? Reason { get; set; }
 
-    public string EndPoint => "/admin/purge/person";
+    public string EndPoint => "/api/v3/admin/purge/person";
     public HttpMethod Method => HttpMethod.Post;
 }

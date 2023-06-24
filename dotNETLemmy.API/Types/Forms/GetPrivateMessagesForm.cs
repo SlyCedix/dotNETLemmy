@@ -7,6 +7,6 @@ public class GetPrivateMessagesForm : IForm
     public int? Page { get; set; }
     public bool? UnreadOnly { get; set; }
 
-    public string EndPoint => "/private_message/list";
+    public string EndPoint => "/api/v3/private_message/list";
     public HttpMethod Method => HttpMethod.Get;
 }

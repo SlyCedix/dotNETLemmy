@@ -12,6 +12,6 @@ public class RegisterForm : IForm
     public bool ShowNsfw { get; set; }
     public string Username { get; set; } = string.Empty;
 
-    public string EndPoint => "/user/register";
+    public string EndPoint => "/api/v3/user/register";
     public HttpMethod Method => HttpMethod.Post;
 }

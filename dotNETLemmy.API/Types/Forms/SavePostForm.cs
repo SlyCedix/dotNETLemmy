@@ -6,6 +6,6 @@ public class SavePostForm : IForm
     public int PostId { get; set; }
     public bool Save { get; set; }
 
-    public string EndPoint => "/post/save";
+    public string EndPoint => "/api/v3/post/save";
     public HttpMethod Method => HttpMethod.Put;
 }

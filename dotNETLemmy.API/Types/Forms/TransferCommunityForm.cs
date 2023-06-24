@@ -6,6 +6,6 @@ public class TransferCommunityForm : IForm
     public int CommunityId { get; set; }
     public int PersonId { get; set; }
 
-    public string EndPoint => "/community/transfer";
+    public string EndPoint => "/api/v3/community/transfer";
     public HttpMethod Method => HttpMethod.Post;
 }

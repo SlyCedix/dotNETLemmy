@@ -6,6 +6,6 @@ public class LikePostForm : IForm
     public int PostId { get; set; }
     public int Score { get; set; }
 
-    public string EndPoint => "/post/like";
+    public string EndPoint => "/api/v3/post/like";
     public HttpMethod Method => HttpMethod.Post;
 }

@@ -1,6 +1,6 @@
-using System.Diagnostics;
-using System.Diagnostics.CodeAnalysis;
-using System.Text.Json;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+
 using dotNETLemmy.API;
 using dotNETLemmy.API.Types;
 using dotNETLemmy.API.Types.Forms;
@@ -10,59 +10,57 @@ namespace dotNETLemmy.Tests;
 [TestFixture]
 public class Tests
 {
-    private LemmyHttpClient? _client;
-    
-    private string? _jwt;
+    private IHost? _host;
     
     private readonly string _username = Environment.GetEnvironmentVariable("LEMMY_USER") ?? "";
     private readonly string _password = Environment.GetEnvironmentVariable("LEMMY_PASS") ?? "";
     private readonly string _lemmyurl = Environment.GetEnvironmentVariable("LEMMY_URL") ?? "";
+
+    private ILemmyHttpClient GetDefaultClient()
+    {
+        Assert.That(_host, Is.Not.Null);
+        var client = _host!.Services.GetService<ILemmyHttpClient>();
+        Assert.That(client, Is.Not.Null);
+        return client!;
+    }
     
     [OneTimeSetUp]
     public void Init()
+    {
+        // Configure default client
+        Assert.That(_lemmyurl, Is.Not.Empty);
+        var builder = Host.CreateApplicationBuilder();
+        builder.Services.AddHttpClient<ILemmyHttpClient, LemmyHttpClient>()
+            .ConfigureHttpClient(client => client.BaseAddress = new Uri(_lemmyurl));
+        _host = builder.Build();
+    }
+
+    [Test]
+    public async Task LoginTest()
     {
         Assert.Multiple(() =>
         {
             Assert.That(_username, Is.Not.Empty);
             Assert.That(_password, Is.Not.Empty);
-            Assert.That(_lemmyurl, Is.Not.Empty);
         });
-        
-        _client = new LemmyHttpClient(new Uri(_lemmyurl));
-    }
-
-    [OneTimeTearDown]
-    public void Cleanup()
-    {
-        _client?.Dispose();
-    }
-
-    /// <summary>
-    /// Should be run first to initialize _jwt
-    /// </summary>
-    [Test, Order(1)]
-    public async Task LoginTest()
-    {
-        Assert.That(_client, Is.Not.Null);
+        var client = GetDefaultClient();
         
         var loginForm = new LoginForm
         {
             UsernameOrEmail = _username, Password = _password
         };
         
-        var loginResponse = await _client!.Login(loginForm);
+        var loginResponse = await client.Login(loginForm);
 
         Assert.That(loginResponse.Jwt, Is.Not.Null);
-
-        _jwt = loginResponse.Jwt!;
     }
-    
+
     [Test]
     public async Task CommunitiesTest()
     {
-        Assert.That(_client, Is.Not.Null);
+        var client = GetDefaultClient();
         
-        var listCommunitiesResponse = await _client!.ListCommunities(new ListCommunitiesForm());
+        var listCommunitiesResponse = await client.ListCommunities(new ListCommunitiesForm());
         Assert.Multiple(() =>
         {
             Assert.That(listCommunitiesResponse.HasError, Is.False);
@@ -74,7 +72,7 @@ public class Tests
         Assert.That(firstCommunity, Is.Not.Null);
 
         var getCommunityForm = new GetCommunityForm { Id = firstCommunity.Community.Id };
-        var getCommunityResponse = await _client!.GetCommunity(getCommunityForm);
+        var getCommunityResponse = await client.GetCommunity(getCommunityForm);
         Assert.Multiple(() =>
         {
             Assert.That(getCommunityResponse.HasError, Is.False);
@@ -87,9 +85,9 @@ public class Tests
     [Test]
     public async Task GetPostsTest()
     {
-        Assert.That(_client, Is.Not.Null);
+        var client = GetDefaultClient();
         
-        var getPostsResponse = await _client!.GetPosts(new GetPostsForm());
+        var getPostsResponse = await client.GetPosts(new GetPostsForm());
         Assert.Multiple(() =>
         {
             Assert.That(getPostsResponse.HasError, Is.False);
@@ -101,7 +99,7 @@ public class Tests
         Assert.That(firstPost, Is.Not.Null);
 
         var getPostForm = new GetPostForm { Id = firstPost.Post.Id };
-        var getPostResponse = await _client!.GetPost(getPostForm);
+        var getPostResponse = await client!.GetPost(getPostForm);
         Assert.Multiple(() =>
         {
             Assert.That(getPostResponse.HasError, Is.False);

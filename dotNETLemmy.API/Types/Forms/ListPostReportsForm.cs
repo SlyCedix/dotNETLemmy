@@ -8,6 +8,6 @@ public class ListPostReportsForm : IForm
     public int? Page { get; set; }
     public bool? UnresolvedOnly { get; set; }
 
-    public string EndPoint => "/post/report/list";
+    public string EndPoint => "/api/v3/post/report/list";
     public HttpMethod Method => HttpMethod.Get;
 }

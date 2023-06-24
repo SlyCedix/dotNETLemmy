@@ -15,6 +15,6 @@ public class GetPersonMentionsForm : IForm
     public int? Page { get; set; }
     public bool? UnreadOnly { get; set; }
 
-    public string EndPoint => "/user/mention";
+    public string EndPoint => "/api/v3/user/mention";
     public HttpMethod Method => HttpMethod.Get;
 }

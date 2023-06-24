@@ -7,6 +7,6 @@ public class ListRegistrationApplicationsForm : IForm
     public int? Page { get; set; }
     public bool? UnreadOnly { get; set; }
 
-    public string EndPoint => "/admin/registration_application/list";
+    public string EndPoint => "/api/v3/admin/registration_application/list";
     public HttpMethod Method => HttpMethod.Get;
 }

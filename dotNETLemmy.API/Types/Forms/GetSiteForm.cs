@@ -4,6 +4,6 @@ public class GetSiteForm : IForm
 {
     public string? Auth { get; set; }
 
-    public string EndPoint => "/site";
+    public string EndPoint => "/api/v3/site";
     public HttpMethod Method => HttpMethod.Get;
 }

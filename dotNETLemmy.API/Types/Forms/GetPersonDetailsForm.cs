@@ -17,6 +17,6 @@ public class GetPersonDetailsForm : IForm
 
     public string? Username { get; set; }
 
-    public string EndPoint => "/user";
+    public string EndPoint => "/api/v3/user";
     public HttpMethod Method => HttpMethod.Get;
 }

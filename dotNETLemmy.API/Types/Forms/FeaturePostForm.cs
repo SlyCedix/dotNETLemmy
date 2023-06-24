@@ -8,6 +8,6 @@ public class FeaturePostForm : IForm
     public PostFeatureType FeatureType { get; set; }
     public bool Featured { get; set; }
     public int PostId { get; set; }
-    public string EndPoint => "/post/feature";
+    public string EndPoint => "/api/v3/post/feature";
     public HttpMethod Method => HttpMethod.Post;
 }

@@ -9,6 +9,6 @@ public class BanFromCommunityForm : IForm
     public int PersonId { get; set; }
     public string? Reason { get; set; }
     public bool? RemoveData { get; set; }
-    public string EndPoint => "/community/ban_user";
+    public string EndPoint => "/api/v3/community/ban_user";
     public HttpMethod Method => HttpMethod.Post;
 }

@@ -11,6 +11,6 @@ public class EditCommunityForm : IForm
     public bool? Nsfw { get; set; }
     public bool? PostingRestrictedToMods { get; set; }
     public string? Title { get; set; }
-    public string EndPoint => "/community";
+    public string EndPoint => "/api/v3/community";
     public HttpMethod Method => HttpMethod.Put;
 }

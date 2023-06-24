@@ -6,6 +6,6 @@ public class ResolveCommentReportForm : IForm
     public int ReportId { get; set; }
     public bool Resolved { get; set; }
 
-    public string EndPoint => "/comment/report/resolve";
+    public string EndPoint => "/api/v3/comment/report/resolve";
     public HttpMethod Method => HttpMethod.Put;
 }

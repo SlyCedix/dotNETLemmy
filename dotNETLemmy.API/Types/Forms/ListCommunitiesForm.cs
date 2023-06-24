@@ -17,6 +17,6 @@ public class ListCommunitiesForm : IForm
     [JsonProperty(PropertyName = "type_")]
     public ListingType? Type { get; set; }
 
-    public string EndPoint => "/community/list";
+    public string EndPoint => "/api/v3/community/list";
     public HttpMethod Method => HttpMethod.Get;
 }
