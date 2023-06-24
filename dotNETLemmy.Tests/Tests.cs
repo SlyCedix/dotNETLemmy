@@ -12,22 +12,24 @@ public class Tests
 {
     private IHost? _host;
     
-    private string? _jwt;
-    
     private readonly string _username = Environment.GetEnvironmentVariable("LEMMY_USER") ?? "";
     private readonly string _password = Environment.GetEnvironmentVariable("LEMMY_PASS") ?? "";
     private readonly string _lemmyurl = Environment.GetEnvironmentVariable("LEMMY_URL") ?? "";
+
+    private LemmyHttpClient GetDefaultClient()
+    {
+        Assert.That(_host, Is.Not.Null);
+        var client = _host!.Services.GetService<LemmyHttpClient>();
+        Assert.That(client, Is.Not.Null);
+        return client!;
+    }
     
     [OneTimeSetUp]
     public void Init()
     {
-        Assert.Multiple(() =>
-        {
-            Assert.That(_username, Is.Not.Empty);
-            Assert.That(_password, Is.Not.Empty);
-            Assert.That(_lemmyurl, Is.Not.Empty);
-        });
-
+        Assert.That(_lemmyurl, Is.Not.Empty);
+        
+        // Configure default client
         var builder = Host.CreateDefaultBuilder()
             .ConfigureServices(services =>
             {
@@ -37,40 +39,35 @@ public class Tests
                         client.BaseAddress = new Uri(_lemmyurl);
                     });
             });
-
         _host = builder.Build();
     }
 
-    /// <summary>
-    /// Should be run first to initialize _jwt
-    /// </summary>
-    [Test, Order(1)]
+    [Test]
     public async Task LoginTest()
     {
-        Assert.That(_host, Is.Not.Null);
-        var client = _host!.Services.GetService<LemmyHttpClient>();
-        Assert.That(client, Is.Not.Null);
+        Assert.Multiple(() =>
+        {
+            Assert.That(_username, Is.Not.Empty);
+            Assert.That(_password, Is.Not.Empty);
+        });
+        var client = GetDefaultClient();
         
         var loginForm = new LoginForm
         {
             UsernameOrEmail = _username, Password = _password
         };
         
-        var loginResponse = await client!.Login(loginForm);
+        var loginResponse = await client.Login(loginForm);
 
         Assert.That(loginResponse.Jwt, Is.Not.Null);
-
-        _jwt = loginResponse.Jwt!;
     }
-    
+
     [Test]
     public async Task CommunitiesTest()
     {
-        Assert.That(_host, Is.Not.Null);
-        var client = _host!.Services.GetService<LemmyHttpClient>();
-        Assert.That(client, Is.Not.Null);
+        var client = GetDefaultClient();
         
-        var listCommunitiesResponse = await client!.ListCommunities(new ListCommunitiesForm());
+        var listCommunitiesResponse = await client.ListCommunities(new ListCommunitiesForm());
         Assert.Multiple(() =>
         {
             Assert.That(listCommunitiesResponse.HasError, Is.False);
@@ -82,7 +79,7 @@ public class Tests
         Assert.That(firstCommunity, Is.Not.Null);
 
         var getCommunityForm = new GetCommunityForm { Id = firstCommunity.Community.Id };
-        var getCommunityResponse = await client!.GetCommunity(getCommunityForm);
+        var getCommunityResponse = await client.GetCommunity(getCommunityForm);
         Assert.Multiple(() =>
         {
             Assert.That(getCommunityResponse.HasError, Is.False);
@@ -95,11 +92,9 @@ public class Tests
     [Test]
     public async Task GetPostsTest()
     {
-        Assert.That(_host, Is.Not.Null);
-        var client = _host!.Services.GetService<LemmyHttpClient>();
-        Assert.That(client, Is.Not.Null);
+        var client = GetDefaultClient();
         
-        var getPostsResponse = await client!.GetPosts(new GetPostsForm());
+        var getPostsResponse = await client.GetPosts(new GetPostsForm());
         Assert.Multiple(() =>
         {
             Assert.That(getPostsResponse.HasError, Is.False);
