@@ -30,8 +30,7 @@ public class Tests
         // Configure default client
         Assert.That(_lemmyurl, Is.Not.Empty);
         var builder = Host.CreateApplicationBuilder();
-        builder.Services.AddHttpClient<ILemmyHttpClient, LemmyHttpClient>()
-            .ConfigureHttpClient(client => client.BaseAddress = new Uri(_lemmyurl));
+        builder.Services.AddHttpClient<ILemmyHttpClient, LemmyHttpClient>();
         _host = builder.Build();
     }
 
@@ -44,6 +43,7 @@ public class Tests
             Assert.That(_password, Is.Not.Empty);
         });
         var client = GetDefaultClient();
+        client.BaseAddress = _lemmyurl;
         
         var loginForm = new LoginForm
         {
@@ -59,6 +59,7 @@ public class Tests
     public async Task CommunitiesTest()
     {
         var client = GetDefaultClient();
+        client.BaseAddress = _lemmyurl;
         
         var listCommunitiesResponse = await client.ListCommunities(new ListCommunitiesForm());
         Assert.Multiple(() =>
@@ -86,6 +87,7 @@ public class Tests
     public async Task GetPostsTest()
     {
         var client = GetDefaultClient();
+        client.BaseAddress = _lemmyurl;
         
         var getPostsResponse = await client.GetPosts(new GetPostsForm());
         Assert.Multiple(() =>
