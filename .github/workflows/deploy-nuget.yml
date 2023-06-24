@@ -1,15 +1,14 @@
 name: Build, test, and deploy nuget package on new tag
 
 on:
-  push:
-    branches: 
-      - main
   pull_request:
     branches:
       - main
-  release:
-    types:
-      - published    # Run the workflow when a new GitHub release is published
+  push:
+    branches:
+      - main
+    tags:
+      - v*
     
 env:
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
