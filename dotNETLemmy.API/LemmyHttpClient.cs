@@ -14,8 +14,7 @@ public sealed class LemmyHttpClient : ILemmyHttpClient
     private class LemmyHttpClientException : HttpRequestException {}
     
     public string BaseAddress { get; set; } = string.Empty;
-    private HttpClient? Client { get; }
-    private IHttpClientFactory? HttpClientFactory { get; }
+    private HttpClient Client { get; }
     
     /// <summary>
     ///     Initializes a new instance of the <see cref="LemmyHttpClient" /> class
@@ -32,13 +31,8 @@ public sealed class LemmyHttpClient : ILemmyHttpClient
     public async Task<TResponse> SendAsync<TResponse>(IForm form, CancellationToken cancellationToken = default)
         where TResponse : Response, new()
     {
-        if ((Client ?? HttpClientFactory?.CreateClient()) is not { } client)
-        {
-            throw new LemmyHttpClientException();
-        }
-        
         var req = form.ToRequest(BaseAddress);
-        var res = await client.SendAsync(req, cancellationToken);
+        var res = await Client.SendAsync(req, cancellationToken);
         return await Response.FromHttpResponseMessage<TResponse>(res);
     }
     
