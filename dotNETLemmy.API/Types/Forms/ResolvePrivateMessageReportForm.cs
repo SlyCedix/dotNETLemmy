@@ -6,6 +6,6 @@ public class ResolvePrivateMessageReportForm : IForm
     public int ReportId { get; set; }
     public bool Resolved { get; set; }
 
-    public string EndPoint => "/private_message/report/resolve";
+    public string EndPoint => "/api/v3/private_message/report/resolve";
     public HttpMethod Method => HttpMethod.Put;
 }

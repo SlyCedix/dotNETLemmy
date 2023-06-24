@@ -6,6 +6,6 @@ public class MarkPrivateMessageAsReadForm : IForm
     public int PrivateMessageId { get; set; }
     public bool Read { get; set; }
 
-    public string EndPoint => "/private_message/mark_as_read";
+    public string EndPoint => "/api/v3/private_message/mark_as_read";
     public HttpMethod Method => HttpMethod.Post;
 }

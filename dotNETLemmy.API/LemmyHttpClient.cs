@@ -9,9 +9,13 @@ namespace dotNETLemmy.API;
 /// </summary>
 /// <seealso cref="IDisposable" />
 /// <inheritdoc/>
-public class LemmyHttpClient : ILemmyHttpClient
+public sealed class LemmyHttpClient : ILemmyHttpClient
 {
-    private HttpClient Client { get; }
+    private class LemmyHttpClientException : HttpRequestException {}
+    
+    public string BaseAddress { get; set; } = string.Empty;
+    private HttpClient? Client { get; }
+    private IHttpClientFactory? HttpClientFactory { get; }
     
     /// <summary>
     ///     Initializes a new instance of the <see cref="LemmyHttpClient" /> class
@@ -19,17 +23,22 @@ public class LemmyHttpClient : ILemmyHttpClient
     ///         Intended to be used as an <see cref="IHttpClientFactory"/> typed client
     ///     </para>
     /// </summary>
-    /// <param name="client">Base uri to the lemmy instance</param>
+    /// <param name="client"><see cref="HttpClient"/> to use for making requests</param>
     public LemmyHttpClient(HttpClient client)
     {
         Client = client;
     }
-    
+
     public async Task<TResponse> SendAsync<TResponse>(IForm form, CancellationToken cancellationToken = default)
         where TResponse : Response, new()
     {
-        var req = form.ToRequest(Client.BaseAddress!);
-        var res = await Client.SendAsync(req, cancellationToken);
+        if ((Client ?? HttpClientFactory?.CreateClient()) is not { } client)
+        {
+            throw new LemmyHttpClientException();
+        }
+        
+        var req = form.ToRequest(BaseAddress);
+        var res = await client.SendAsync(req, cancellationToken);
         return await Response.FromHttpResponseMessage<TResponse>(res);
     }
     

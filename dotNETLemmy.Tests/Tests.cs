@@ -16,10 +16,10 @@ public class Tests
     private readonly string _password = Environment.GetEnvironmentVariable("LEMMY_PASS") ?? "";
     private readonly string _lemmyurl = Environment.GetEnvironmentVariable("LEMMY_URL") ?? "";
 
-    private LemmyHttpClient GetDefaultClient()
+    private ILemmyHttpClient GetDefaultClient()
     {
         Assert.That(_host, Is.Not.Null);
-        var client = _host!.Services.GetService<LemmyHttpClient>();
+        var client = _host!.Services.GetService<ILemmyHttpClient>();
         Assert.That(client, Is.Not.Null);
         return client!;
     }
@@ -27,18 +27,11 @@ public class Tests
     [OneTimeSetUp]
     public void Init()
     {
-        Assert.That(_lemmyurl, Is.Not.Empty);
-        
         // Configure default client
-        var builder = Host.CreateDefaultBuilder()
-            .ConfigureServices(services =>
-            {
-                services.AddHttpClient<LemmyHttpClient>()
-                    .ConfigureHttpClient(client =>
-                    {
-                        client.BaseAddress = new Uri(_lemmyurl);
-                    });
-            });
+        Assert.That(_lemmyurl, Is.Not.Empty);
+        var builder = Host.CreateApplicationBuilder();
+        builder.Services.AddHttpClient<ILemmyHttpClient, LemmyHttpClient>()
+            .ConfigureHttpClient(client => client.BaseAddress = new Uri(_lemmyurl));
         _host = builder.Build();
     }
 

@@ -6,6 +6,6 @@ public class AddAdminForm : IForm
     public string Auth { get; set; } = string.Empty;
     public int PersonId { get; set; }
 
-    public string EndPoint => "/admin/add";
+    public string EndPoint => "/api/v3/admin/add";
     public HttpMethod Method => HttpMethod.Post;
 }

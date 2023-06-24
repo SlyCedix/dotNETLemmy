@@ -8,6 +8,6 @@ public class EditCommentForm : IForm
     public bool? Distinguished { get; set; }
     public string? FormId { get; set; }
     public int? LanguageId { get; set; }
-    public string EndPoint => "/comment";
+    public string EndPoint => "/api/v3/comment";
     public HttpMethod Method => HttpMethod.Put;
 }

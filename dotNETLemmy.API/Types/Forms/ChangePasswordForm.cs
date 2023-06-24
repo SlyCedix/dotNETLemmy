@@ -6,6 +6,6 @@ public class ChangePasswordForm : IForm
     public string NewPassword { get; set; } = string.Empty;
     public string NewPasswordVerify { get; set; } = string.Empty;
     public string OldPassword { get; set; } = string.Empty;
-    public string EndPoint => "/user/change_password";
+    public string EndPoint => "/api/v3/user/change_password";
     public HttpMethod Method => HttpMethod.Put;
 }

@@ -9,6 +9,6 @@ public class EditPostForm : IForm
     public bool? Nsfw { get; set; }
     public int PostId { get; set; }
     public string? Url { get; set; }
-    public string EndPoint => "/post";
+    public string EndPoint => "/api/v3/post";
     public HttpMethod Method => HttpMethod.Put;
 }

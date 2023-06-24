@@ -6,6 +6,6 @@ public class MarkPostAsReadForm : IForm
     public int PostId { get; set; }
     public bool Read { get; set; }
 
-    public string EndPoint => "/post/mark_as_read";
+    public string EndPoint => "/api/v3/post/mark_as_read";
     public HttpMethod Method => HttpMethod.Post;
 }

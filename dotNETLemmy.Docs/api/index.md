@@ -16,7 +16,7 @@ public class NonstandardForm : IForm
     [JsonProperty(PropertyName = "NonStandardExample")]
     public int ExampleInt { get; set; } // serialized as NonStandardExample
     
-    public string EndPoint => "/nonstandard/api/endpoint"
+    public string EndPoint => "/api/v3/nonstandard/api/endpoint"
     public HttpMethod Method => HttpMethod.Post; // Substitute for correct request method
 }
 ```

@@ -6,6 +6,6 @@ public class ApproveRegistrationApplicationForm : IForm
     public string Auth { get; set; } = string.Empty;
     public string? DenyReason { get; set; }
     public int Id { get; set; }
-    public string EndPoint => "/admin/registration_application/approve";
+    public string EndPoint => "/api/v3/admin/registration_application/approve";
     public HttpMethod Method => HttpMethod.Put;
 }

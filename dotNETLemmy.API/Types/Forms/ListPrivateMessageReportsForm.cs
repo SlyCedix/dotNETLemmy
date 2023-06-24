@@ -7,6 +7,6 @@ public class ListPrivateMessageReportsForm : IForm
     public int? Page { get; set; }
     public bool? UnresolvedOnly { get; set; }
 
-    public string EndPoint => "/private_message/report/list";
+    public string EndPoint => "/api/v3/private_message/report/list";
     public HttpMethod Method => HttpMethod.Get;
 }

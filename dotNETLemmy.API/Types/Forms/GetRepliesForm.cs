@@ -15,6 +15,6 @@ public class GetRepliesForm : IForm
 
     public bool? UnreadOnly { get; set; }
 
-    public string EndPoint => "/user/replies";
+    public string EndPoint => "/api/v3/user/replies";
     public HttpMethod Method => HttpMethod.Get;
 }

@@ -8,6 +8,6 @@ public class BanPersonForm : IForm
     public int PersonId { get; set; }
     public string? Reason { get; set; }
     public bool? RemoveData { get; set; }
-    public string EndPoint => "/user/ban";
+    public string EndPoint => "/api/v3/user/ban";
     public HttpMethod Method => HttpMethod.Post;
 }

@@ -20,6 +20,6 @@ public class GetPostsForm : IForm
     [JsonProperty(PropertyName = "type_")]
     public ListingType? Type { get; set; }
 
-    public string EndPoint => "/post/list";
+    public string EndPoint => "/api/v3/post/list";
     public HttpMethod Method => HttpMethod.Get;
 }

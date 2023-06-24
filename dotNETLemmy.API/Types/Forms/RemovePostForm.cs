@@ -7,6 +7,6 @@ public class RemovePostForm : IForm
     public string? Reason { get; set; }
     public bool Removed { get; set; }
 
-    public string EndPoint => "/post/remove";
+    public string EndPoint => "/api/v3/post/remove";
     public HttpMethod Method => HttpMethod.Post;
 }

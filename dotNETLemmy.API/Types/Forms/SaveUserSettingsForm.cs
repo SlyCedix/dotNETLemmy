@@ -23,6 +23,6 @@ public class SaveUserSettingsForm : IForm
     public bool? ShowScores { get; set; }
     public string? Theme { get; set; }
 
-    public string EndPoint => "/user/save_user_settings";
+    public string EndPoint => "/api/v3/user/save_user_settings";
     public HttpMethod Method => HttpMethod.Put;
 }

@@ -6,6 +6,6 @@ public class SaveCommentForm : IForm
     public int CommentId { get; set; }
     public bool Save { get; set; }
 
-    public string EndPoint => "/comment/save";
+    public string EndPoint => "/api/v3/comment/save";
     public HttpMethod Method => HttpMethod.Put;
 }

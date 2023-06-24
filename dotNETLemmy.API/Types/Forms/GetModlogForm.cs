@@ -17,6 +17,6 @@ public class GetModlogForm : IForm
     [JsonProperty(PropertyName = "type_")]
     public ModlogActionType Type { get; set; }
 
-    public string EndPoint => "/modlog";
+    public string EndPoint => "/api/v3/modlog";
     public HttpMethod Method => HttpMethod.Get;
 }

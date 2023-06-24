@@ -8,6 +8,6 @@ public class ListCommentReportsForm : IForm
     public int? Page { get; set; }
     public bool? UnresolvedOnly { get; set; }
 
-    public string EndPoint => "/comment/report/list";
+    public string EndPoint => "/api/v3/comment/report/list";
     public HttpMethod Method => HttpMethod.Get;
 }
