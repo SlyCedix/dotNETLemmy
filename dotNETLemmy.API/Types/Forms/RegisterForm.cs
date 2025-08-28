@@ -2,6 +2,7 @@ namespace dotNETLemmy.API.Types.Forms;
 
 public class RegisterForm : IForm
 {
+    public string? Auth { get; set; }
     public string? Answer { get; set; }
     public string? CaptchaAnswer { get; set; }
     public string? CaptchaUuid { get; set; }

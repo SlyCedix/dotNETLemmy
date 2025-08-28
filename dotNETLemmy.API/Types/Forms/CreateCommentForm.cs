@@ -2,7 +2,7 @@ namespace dotNETLemmy.API.Types.Forms;
 
 public class CreateCommentForm : IForm
 {
-    public string Auth { get; set; } = string.Empty;
+    public string? Auth { get; set; } = string.Empty;
     public string Content { get; set; } = string.Empty;
     public string? FormId { get; set; }
     public int? LanguageId { get; set; }

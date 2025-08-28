@@ -2,7 +2,7 @@ namespace dotNETLemmy.API.Types.Forms;
 
 public class ListPostReportsForm : IForm
 {
-    public string Auth { get; set; } = string.Empty;
+    public string? Auth { get; set; } = string.Empty;
     public int? CommunityId { get; set; }
     public int? Limit { get; set; }
     public int? Page { get; set; }

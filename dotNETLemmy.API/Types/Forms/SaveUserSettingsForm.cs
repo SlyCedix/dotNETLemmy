@@ -2,7 +2,7 @@ namespace dotNETLemmy.API.Types.Forms;
 
 public class SaveUserSettingsForm : IForm
 {
-    public string Auth { get; set; } = string.Empty;
+    public string? Auth { get; set; } = string.Empty;
     public string? Avatar { get; set; }
     public string? Banner { get; set; }
     public string? Bio { get; set; }

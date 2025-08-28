@@ -2,6 +2,7 @@ namespace dotNETLemmy.API.Types.Forms;
 
 public class PasswordChangeForm : IForm
 {
+    public string? Auth { get; set; }
     public string Password { get; set; } = string.Empty;
     public string PasswordVerify { get; set; } = string.Empty;
     public string Token { get; set; } = string.Empty;

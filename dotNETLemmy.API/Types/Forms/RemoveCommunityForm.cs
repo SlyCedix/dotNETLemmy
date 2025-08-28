@@ -2,7 +2,7 @@ namespace dotNETLemmy.API.Types.Forms;
 
 public class RemoveCommunityForm : IForm
 {
-    public string Auth { get; set; } = string.Empty;
+    public string? Auth { get; set; } = string.Empty;
     public int CommunityId { get; set; }
     public int? Expires { get; set; }
     public string? Reason { get; set; }

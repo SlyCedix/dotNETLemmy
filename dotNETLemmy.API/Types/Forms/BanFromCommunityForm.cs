@@ -2,7 +2,7 @@ namespace dotNETLemmy.API.Types.Forms;
 
 public class BanFromCommunityForm : IForm
 {
-    public string Auth { get; set; } = string.Empty;
+    public string? Auth { get; set; } = string.Empty;
     public bool Ban { get; set; }
     public int CommunityId { get; set; }
     public int? Expires { get; set; }

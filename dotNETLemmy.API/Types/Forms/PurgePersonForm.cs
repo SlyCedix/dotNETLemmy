@@ -2,7 +2,7 @@ namespace dotNETLemmy.API.Types.Forms;
 
 public class PurgePersonForm : IForm
 {
-    public string Auth { get; set; } = string.Empty;
+    public string? Auth { get; set; } = string.Empty;
     public int PersonId { get; set; }
     public string? Reason { get; set; }
 

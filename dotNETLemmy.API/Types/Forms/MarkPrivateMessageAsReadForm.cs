@@ -2,7 +2,7 @@ namespace dotNETLemmy.API.Types.Forms;
 
 public class MarkPrivateMessageAsReadForm : IForm
 {
-    public string Auth { get; set; } = string.Empty;
+    public string? Auth { get; set; } = string.Empty;
     public int PrivateMessageId { get; set; }
     public bool Read { get; set; }
 

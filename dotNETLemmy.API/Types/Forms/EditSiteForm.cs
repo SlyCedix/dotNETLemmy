@@ -8,7 +8,7 @@ public class EditSiteForm : IForm
     public string[]? AllowedInstances { get; set; }
     public bool? ApplicationEmailAdmins { get; set; }
     public string? ApplicationQuestion { get; set; }
-    public string Auth { get; set; } = string.Empty;
+    public string? Auth { get; set; } = string.Empty;
     public string? Banner { get; set; }
     public string[]? BlockedInstances { get; set; }
     public string? CaptchaDifficulty { get; set; }

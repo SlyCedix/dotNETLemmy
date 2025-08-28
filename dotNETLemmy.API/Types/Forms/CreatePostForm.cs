@@ -2,7 +2,7 @@ namespace dotNETLemmy.API.Types.Forms;
 
 public class CreatePostForm : IForm
 {
-    public string Auth { get; set; } = string.Empty;
+    public string? Auth { get; set; } = string.Empty;
     public string? Body { get; set; }
     public int CommunityId { get; set; }
     public string? Honeypot { get; set; }

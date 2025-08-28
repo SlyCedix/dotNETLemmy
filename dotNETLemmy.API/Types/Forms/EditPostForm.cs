@@ -2,7 +2,7 @@ namespace dotNETLemmy.API.Types.Forms;
 
 public class EditPostForm : IForm
 {
-    public string Auth { get; set; } = string.Empty;
+    public string? Auth { get; set; } = string.Empty;
     public string? Body { get; set; }
     public int? LanguageId { get; set; }
     public string? Name { get; set; }

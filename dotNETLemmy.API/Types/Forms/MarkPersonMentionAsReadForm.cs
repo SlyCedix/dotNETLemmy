@@ -2,7 +2,7 @@ namespace dotNETLemmy.API.Types.Forms;
 
 public class MarkPersonMentionAsReadForm : IForm
 {
-    public string Auth { get; set; } = string.Empty;
+    public string? Auth { get; set; } = string.Empty;
     public int PersonMentionId { get; set; }
     public bool Read { get; set; }
 

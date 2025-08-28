@@ -2,7 +2,7 @@ namespace dotNETLemmy.API.Types.Forms;
 
 public class EditCommunityForm : IForm
 {
-    public string Auth { get; set; } = string.Empty;
+    public string? Auth { get; set; } = string.Empty;
     public string? Banner { get; set; }
     public int CommunityId { get; set; }
     public string? Description { get; set; }

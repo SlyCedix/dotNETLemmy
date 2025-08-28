@@ -2,7 +2,7 @@ namespace dotNETLemmy.API.Types.Forms;
 
 public class SavePostForm : IForm
 {
-    public string Auth { get; set; } = string.Empty;
+    public string? Auth { get; set; } = string.Empty;
     public int PostId { get; set; }
     public bool Save { get; set; }
 

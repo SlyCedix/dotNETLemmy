@@ -2,7 +2,7 @@ namespace dotNETLemmy.API.Types.Forms;
 
 public class MarkCommentReplyAsReadForm : IForm
 {
-    public string Auth { get; set; } = string.Empty;
+    public string? Auth { get; set; } = string.Empty;
     public int CommentReplyId { get; set; }
     public bool Read { get; set; }
 

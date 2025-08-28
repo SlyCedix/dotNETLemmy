@@ -2,7 +2,7 @@ namespace dotNETLemmy.API.Types.Forms;
 
 public class ResolvePostReportForm : IForm
 {
-    public string Auth { get; set; } = string.Empty;
+    public string? Auth { get; set; } = string.Empty;
     public int ReportId { get; set; }
     public bool Resolved { get; set; }
 

@@ -5,6 +5,7 @@ namespace dotNETLemmy.API.Types;
 
 public interface IForm : IJsonObject
 {
+    public string? Auth { get; set; }
     public string EndPoint { get; }
     public HttpMethod Method { get; }
 
@@ -22,7 +23,14 @@ public interface IForm : IJsonObject
 
         if (Method != HttpMethod.Get &&
             Method != HttpMethod.Head)
+        {
+            if (!string.IsNullOrEmpty(Auth))
+            {
+                req.Headers.Add("authorization", $"Bearer {Auth}");
+            }
             req.Content = new StringContent(Json, Encoding.UTF8, "application/json");
+        }
+            
 
         return req;
     }

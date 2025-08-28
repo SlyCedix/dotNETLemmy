@@ -4,7 +4,7 @@ namespace dotNETLemmy.API.Types.Forms;
 
 public class FeaturePostForm : IForm
 {
-    public string Auth { get; set; } = string.Empty;
+    public string? Auth { get; set; } = string.Empty;
     public PostFeatureType FeatureType { get; set; }
     public bool Featured { get; set; }
     public int PostId { get; set; }
